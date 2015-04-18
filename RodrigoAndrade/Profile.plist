@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>avatar</key>
+	<string>Avatar</string>
+	<key>name</key>
+	<string>Rodrigo Andrade</string>
+	<key>job</key>
+	<string>iOS Developer on BEPiD (Brazilian Education Program for iOS Development)</string>
+	<key>location</key>
+	<dict>
+		<key>name</key>
+		<string>Porto Alegre, RS, Brazil</string>
+		<key>latitude</key>
+		<string>-30.1088701</string>
+		<key>longitude</key>
+		<string>-51.1769046,11</string>
+	</dict>
+</dict>
+</plist>

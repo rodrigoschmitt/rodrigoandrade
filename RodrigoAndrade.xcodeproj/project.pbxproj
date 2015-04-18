@@ -13,6 +13,10 @@
 		4A66691C1AE1422D0004AC3C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A66691A1AE1422D0004AC3C /* LaunchScreen.xib */; };
 		4A6669281AE1422D0004AC3C /* RodrigoAndradeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6669271AE1422D0004AC3C /* RodrigoAndradeTests.swift */; };
 		4A6669391AE1432F0004AC3C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6669381AE1432F0004AC3C /* ProfileViewController.swift */; };
+		81BB1C4D1AE2E8F000502B63 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BB1C4C1AE2E8F000502B63 /* Util.swift */; };
+		81BB1C521AE2F9A200502B63 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BB1C511AE2F9A200502B63 /* Profile.swift */; };
+		81BB1C541AE2F9B800502B63 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BB1C531AE2F9B800502B63 /* ProfileManager.swift */; };
+		81BB1C561AE2FF3400502B63 /* Profile.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81BB1C551AE2FF3400502B63 /* Profile.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		4A6669261AE1422D0004AC3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A6669271AE1422D0004AC3C /* RodrigoAndradeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RodrigoAndradeTests.swift; sourceTree = "<group>"; };
 		4A6669381AE1432F0004AC3C /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		81BB1C4C1AE2E8F000502B63 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		81BB1C511AE2F9A200502B63 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Profile.swift; path = Model/Profile.swift; sourceTree = "<group>"; };
+		81BB1C531AE2F9B800502B63 /* ProfileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileManager.swift; path = Model/ProfileManager.swift; sourceTree = "<group>"; };
+		81BB1C551AE2FF3400502B63 /* Profile.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Profile.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,7 @@
 		4A66690E1AE1422D0004AC3C /* RodrigoAndrade */ = {
 			isa = PBXGroup;
 			children = (
+				81BB1C4C1AE2E8F000502B63 /* Util.swift */,
 				4A6669111AE1422D0004AC3C /* AppDelegate.swift */,
 				4A6669181AE1422D0004AC3C /* Images.xcassets */,
 				4A6669331AE1426B0004AC3C /* Model */,
@@ -91,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				4A6669101AE1422D0004AC3C /* Info.plist */,
+				81BB1C551AE2FF3400502B63 /* Profile.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -132,6 +142,8 @@
 		4A6669331AE1426B0004AC3C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				81BB1C511AE2F9A200502B63 /* Profile.swift */,
+				81BB1C531AE2F9B800502B63 /* ProfileManager.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -216,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81BB1C561AE2FF3400502B63 /* Profile.plist in Resources */,
 				4A6669171AE1422D0004AC3C /* Main.storyboard in Resources */,
 				4A66691C1AE1422D0004AC3C /* LaunchScreen.xib in Resources */,
 				4A6669191AE1422D0004AC3C /* Images.xcassets in Resources */,
@@ -237,6 +250,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A6669391AE1432F0004AC3C /* ProfileViewController.swift in Sources */,
+				81BB1C541AE2F9B800502B63 /* ProfileManager.swift in Sources */,
+				81BB1C521AE2F9A200502B63 /* Profile.swift in Sources */,
+				81BB1C4D1AE2E8F000502B63 /* Util.swift in Sources */,
 				4A6669121AE1422D0004AC3C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +449,7 @@
 				4A66692D1AE1422D0004AC3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A66692E1AE1422D0004AC3C /* Build configuration list for PBXNativeTarget "RodrigoAndradeTests" */ = {
 			isa = XCConfigurationList;
@@ -441,6 +458,7 @@
 				4A6669301AE1422D0004AC3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

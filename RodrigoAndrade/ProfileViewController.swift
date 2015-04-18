@@ -3,17 +3,43 @@
 //  RodrigoAndrade
 //
 //  Created by Rodrigo S Andrade on 4/17/15.
-//  Copyright (c) 2015 Grupo RBS. All rights reserved.
+//  Copyright (c) 2015 DevMac. All rights reserved.
 //
 
 import UIKit
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet weak var imgProfile: UIImageView!
+    @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var lblJob: UILabel!
+    @IBOutlet weak var lblLocation: UILabel!
+    
+    //MARK: Custom Methods
+    
+    func loadData() {
+        
+        let profileManager = ProfileManager()
+        
+        let profile = profileManager.requestProfile()
+        
+        imgProfile.image = profile.avatar
+        lblName.text = profile.name
+        lblJob.text = profile.job
+        lblLocation.text = profile.locationName
+        
+    }
+    
+    //MARK: Methods of this ViewController
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let util = Util()
+        util.circularProfile(self.imgProfile, borderWith: 1.0)
+        
+        
+        loadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,7 +47,10 @@ class ProfileViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
+    }
+    
     /*
     // MARK: - Navigation
 
