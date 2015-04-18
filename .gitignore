@@ -1,0 +1,9 @@
+.DS_Store
+Build/
+Pods/
+
+Flockr.xcodeproj/project.xcworkspace/
+Flockr.xcodeproj/xcuserdata/
+Flockr.xcworkspace/
+
+!Pods/Target Support Files/Pods/Pods-resources.sh
