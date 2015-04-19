@@ -59,4 +59,15 @@ class Util: NSObject {
     
     }
     
+    func takeSnapshot(view: UIView) -> UIImage {
+        
+        UIGraphicsBeginImageContext(view.frame.size)
+        view.layer.renderInContext(UIGraphicsGetCurrentContext())
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return image
+        
+    }
+    
 }

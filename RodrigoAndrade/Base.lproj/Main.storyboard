@@ -167,10 +167,43 @@
                         <outlet property="lblJob" destination="jtM-Vj-HiD" id="o8u-95-bgT"/>
                         <outlet property="lblLocation" destination="FzC-i5-Oq6" id="DFa-nj-YkI"/>
                         <outlet property="lblName" destination="RUn-Vz-3dD" id="wyx-fP-b8Z"/>
+                        <segue destination="BhJ-Jv-bP3" kind="presentation" identifier="segueSkill" id="ryX-mo-e4x"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Skill View Controller-->
+        <scene sceneID="Soc-Xg-xh9">
+            <objects>
+                <viewController id="BhJ-Jv-bP3" customClass="SkillViewController" customModule="RodrigoAndrade" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6CR-wa-1c2"/>
+                        <viewControllerLayoutGuide type="bottom" id="dpU-ZQ-r9s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3lV-19-QnS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cgb-oK-JsH">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dpU-ZQ-r9s" firstAttribute="top" secondItem="cgb-oK-JsH" secondAttribute="bottom" id="WW1-Ei-YEa"/>
+                            <constraint firstItem="cgb-oK-JsH" firstAttribute="top" secondItem="3lV-19-QnS" secondAttribute="topMargin" id="ihB-GC-gUu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cgb-oK-JsH" secondAttribute="trailing" constant="-16" id="lf9-qG-fRh"/>
+                            <constraint firstItem="cgb-oK-JsH" firstAttribute="leading" secondItem="3lV-19-QnS" secondAttribute="leadingMargin" constant="-16" id="sOT-X9-gpk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgBackgroundBlur" destination="cgb-oK-JsH" id="HLd-Rm-n7U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cyw-g8-d6o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1341" y="327"/>
         </scene>
     </scenes>
     <resources>

@@ -59,15 +59,16 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         return UIStatusBarStyle.LightContent
     }
     
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        let skillViewController: SkillViewController = segue.destinationViewController as! SkillViewController
+        skillViewController.backgroundImage = util.takeSnapshot(self.view)
+        
     }
-    */
     
     // MARK: UICollectionViewDataSource
     
@@ -108,7 +109,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
-        println("Seleção na célula \(indexPath.row))")
+        performSegueWithIdentifier("segueSkill", sender: self)
         
     }
     
