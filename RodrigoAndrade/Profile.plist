@@ -13,9 +13,152 @@
 		<key>name</key>
 		<string>Porto Alegre, RS, Brazil</string>
 		<key>latitude</key>
-		<string>-30.1088701</string>
+		<real>-30.1088701</real>
 		<key>longitude</key>
-		<string>-51.1769046,11</string>
+		<real>-51.176904611</real>
+	</dict>
+	<key>skills</key>
+	<dict>
+		<key>Working</key>
+		<array>
+			<dict>
+				<key>photo</key>
+				<string></string>
+				<key>name</key>
+				<string>Grupo RBS</string>
+				<key>title</key>
+				<string>iOS Software Engineer / Tech Leader</string>
+				<key>detail</key>
+				<string>iOS developer and technical leader for mobile teams. Creation of RBS&apos; mobile team and iOS development.</string>
+				<key>period</key>
+				<string>January 2014 – Present</string>
+				<key>since</key>
+				<string>2011</string>
+				<key>link</key>
+				<string>https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile</string>
+			</dict>
+			<dict>
+				<key>photo</key>
+				<string></string>
+				<key>name</key>
+				<string>MobiMarket</string>
+				<key>title</key>
+				<string>iOS Developer</string>
+				<key>detail</key>
+				<string>I&apos;ve worked full-time from Home Office for MobiMarket, and created Apps like Estadão, Caras, Valor Econômico, McDonald&apos;s etc.</string>
+				<key>period</key>
+				<string>August 2009 – December 2010</string>
+				<key>since</key>
+				<string></string>
+				<key>link</key>
+				<string>https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile</string>
+			</dict>
+		</array>
+		<key>Apps</key>
+		<array>
+			<dict>
+				<key>photo</key>
+				<string></string>
+				<key>name</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>detail</key>
+				<string></string>
+				<key>period</key>
+				<string></string>
+				<key>since</key>
+				<string></string>
+				<key>link</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>photo</key>
+				<string></string>
+				<key>name</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>detail</key>
+				<string></string>
+				<key>period</key>
+				<string></string>
+				<key>since</key>
+				<string></string>
+				<key>link</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>Lectures</key>
+		<array>
+			<dict>
+				<key>photo</key>
+				<string></string>
+				<key>name</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>detail</key>
+				<string></string>
+				<key>period</key>
+				<string></string>
+				<key>since</key>
+				<string></string>
+				<key>link</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>photo</key>
+				<string></string>
+				<key>name</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>detail</key>
+				<string></string>
+				<key>period</key>
+				<string></string>
+				<key>since</key>
+				<string></string>
+				<key>link</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>Education</key>
+		<array>
+			<dict>
+				<key>photo</key>
+				<string></string>
+				<key>name</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>detail</key>
+				<string></string>
+				<key>period</key>
+				<string></string>
+				<key>since</key>
+				<string></string>
+				<key>link</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>photo</key>
+				<string></string>
+				<key>name</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>detail</key>
+				<string></string>
+				<key>period</key>
+				<string></string>
+				<key>since</key>
+				<string></string>
+				<key>link</key>
+				<string></string>
+			</dict>
+		</array>
 	</dict>
 </dict>
 </plist>

@@ -19,14 +19,15 @@ class ProfileViewController: UIViewController {
     
     func loadData() {
         
-        let profileManager = ProfileManager()
-        
-        let profile = profileManager.requestProfile()
+        let raManager = RAManager()
+        let profile = raManager.requestProfile()
+        let location = profile.location
         
         imgProfile.image = profile.avatar
         lblName.text = profile.name
         lblJob.text = profile.job
-        lblLocation.text = profile.locationName
+        
+        lblLocation.text = location.name
         
     }
     

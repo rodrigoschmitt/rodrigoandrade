@@ -13,8 +13,7 @@ class Profile: NSObject {
     var avatar: UIImage!
     var name: String!
     var job: String!
-    var locationName: String!
-    var locationLatitude: Double!
-    var locationLongitude: Double!
+    var location: Location!
+    var skills: Skills!
    
 }

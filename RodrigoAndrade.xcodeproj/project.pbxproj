@@ -15,8 +15,12 @@
 		4A6669391AE1432F0004AC3C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6669381AE1432F0004AC3C /* ProfileViewController.swift */; };
 		81BB1C4D1AE2E8F000502B63 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BB1C4C1AE2E8F000502B63 /* Util.swift */; };
 		81BB1C521AE2F9A200502B63 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BB1C511AE2F9A200502B63 /* Profile.swift */; };
-		81BB1C541AE2F9B800502B63 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BB1C531AE2F9B800502B63 /* ProfileManager.swift */; };
+		81BB1C541AE2F9B800502B63 /* RAManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BB1C531AE2F9B800502B63 /* RAManager.swift */; };
 		81BB1C561AE2FF3400502B63 /* Profile.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81BB1C551AE2FF3400502B63 /* Profile.plist */; };
+		81BB1C5A1AE32D2800502B63 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BB1C591AE32D2800502B63 /* Location.swift */; };
+		81BB1C5C1AE3350F00502B63 /* Skills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BB1C5B1AE3350F00502B63 /* Skills.swift */; };
+		81BB1C5E1AE3523100502B63 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BB1C5D1AE3523100502B63 /* Skill.swift */; };
+		81BB1C601AE3524C00502B63 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BB1C5F1AE3524C00502B63 /* Categories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +46,12 @@
 		4A6669381AE1432F0004AC3C /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		81BB1C4C1AE2E8F000502B63 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		81BB1C511AE2F9A200502B63 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Profile.swift; path = Model/Profile.swift; sourceTree = "<group>"; };
-		81BB1C531AE2F9B800502B63 /* ProfileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileManager.swift; path = Model/ProfileManager.swift; sourceTree = "<group>"; };
+		81BB1C531AE2F9B800502B63 /* RAManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RAManager.swift; path = Model/RAManager.swift; sourceTree = "<group>"; };
 		81BB1C551AE2FF3400502B63 /* Profile.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Profile.plist; sourceTree = "<group>"; };
+		81BB1C591AE32D2800502B63 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Location.swift; path = Model/Location.swift; sourceTree = "<group>"; };
+		81BB1C5B1AE3350F00502B63 /* Skills.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Skills.swift; path = Model/Skills.swift; sourceTree = "<group>"; };
+		81BB1C5D1AE3523100502B63 /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Skill.swift; path = Model/Skill.swift; sourceTree = "<group>"; };
+		81BB1C5F1AE3524C00502B63 /* Categories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Categories.swift; path = Model/Categories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +151,11 @@
 			isa = PBXGroup;
 			children = (
 				81BB1C511AE2F9A200502B63 /* Profile.swift */,
-				81BB1C531AE2F9B800502B63 /* ProfileManager.swift */,
+				81BB1C591AE32D2800502B63 /* Location.swift */,
+				81BB1C5D1AE3523100502B63 /* Skill.swift */,
+				81BB1C5F1AE3524C00502B63 /* Categories.swift */,
+				81BB1C5B1AE3350F00502B63 /* Skills.swift */,
+				81BB1C531AE2F9B800502B63 /* RAManager.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -250,9 +262,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A6669391AE1432F0004AC3C /* ProfileViewController.swift in Sources */,
-				81BB1C541AE2F9B800502B63 /* ProfileManager.swift in Sources */,
+				81BB1C541AE2F9B800502B63 /* RAManager.swift in Sources */,
 				81BB1C521AE2F9A200502B63 /* Profile.swift in Sources */,
 				81BB1C4D1AE2E8F000502B63 /* Util.swift in Sources */,
+				81BB1C5C1AE3350F00502B63 /* Skills.swift in Sources */,
+				81BB1C601AE3524C00502B63 /* Categories.swift in Sources */,
+				81BB1C5E1AE3523100502B63 /* Skill.swift in Sources */,
+				81BB1C5A1AE32D2800502B63 /* Location.swift in Sources */,
 				4A6669121AE1422D0004AC3C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
