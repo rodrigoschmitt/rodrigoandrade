@@ -106,6 +106,12 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         
     }
     
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        
+        println("Seleção na célula \(indexPath.row))")
+        
+    }
+    
     // MARK: UICollectionViewDelegate
     
     /*

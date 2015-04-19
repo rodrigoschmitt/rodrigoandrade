@@ -32,31 +32,6 @@ class RAManager: NSObject {
         // Skills
         profile.skills = Skills(plistDict: plistDict?.objectForKey("skills") as! NSDictionary);
         
-        
-        //TODO: Modelo para aplicar na ViewController
-        for categories in profile.skills.categories {
-            
-            let category = categories as! Categories
-
-            println(category.name)
-            println()
-            
-            for skills in category.skills {
-                
-                let skill = skills as! Skill
-                
-                println(skill.name)
-                println(skill.title)
-                println(skill.detail)
-                println()
-                
-                
-            }
-            
-            println()
-            
-        }
-        
         return profile
     }
    
