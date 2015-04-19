@@ -93,7 +93,18 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         return cell
     }
     
-    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+            
+        if (UIScreen.mainScreen().nativeBounds.height < 1334)
+        {
+            return CGSize(width: 152, height: 160)
+        }
+        else
+        {
+            return CGSize(width: 180, height: 188)
+        }
+        
+    }
     
     // MARK: UICollectionViewDelegate
     

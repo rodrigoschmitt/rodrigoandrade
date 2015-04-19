@@ -94,7 +94,7 @@
                                     </collectionViewCell>
                                 </cells>
                                 <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="p7U-4z-gKy">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </collectionReusableView>
                                 <connections>
