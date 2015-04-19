@@ -17,7 +17,11 @@ class Skill: NSObject {
         
     }
     
-    var photo: UIImage!
+    var photo: UIImage {
+        get {
+            return UIImage(named:self.plistDict.objectForKey("photo") as! String)!
+        }
+    }
     
     var name: String {
         get {
@@ -43,9 +47,9 @@ class Skill: NSObject {
         }
     }
     
-    var since: String {
+    var since: NSDate {
         get {
-            return self.plistDict.objectForKey("since") as! String
+            return self.plistDict.objectForKey("since") as! NSDate
         }
     }
     
