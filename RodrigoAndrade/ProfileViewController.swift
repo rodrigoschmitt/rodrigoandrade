@@ -8,8 +8,6 @@
 
 import UIKit
 
-let reuseIdentifier = "Cell"
-
 class ProfileViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate  {
     
     @IBOutlet weak var imgProfile: UIImageView!
@@ -19,6 +17,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     @IBOutlet weak var collectionView: UICollectionView!
     
     var skills: Skills!
+    var indexPath: NSIndexPath!
     let util = Util()
     
     //MARK: Custom Methods
@@ -65,8 +64,11 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         
+        let category = self.skills.categories.objectAtIndex(self.indexPath.row) as! Categories
+        
         let skillViewController: SkillViewController = segue.destinationViewController as! SkillViewController
         skillViewController.backgroundImage = util.takeSnapshot(self.view)
+        skillViewController.skills = category.skills
         
     }
     
@@ -82,7 +84,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! SkillCollectionViewCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! SkillCollectionViewCell
         
         let category = skills.categories.objectAtIndex(indexPath.row) as! Categories
         let skill: Skill = category.skills.objectAtIndex(0) as! Skill
@@ -109,39 +111,10 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
+        self.indexPath = indexPath
+        
         performSegueWithIdentifier("segueSkill", sender: self)
         
     }
-    
-    // MARK: UICollectionViewDelegate
-    
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(collectionView: UICollectionView, shouldHighlightItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-    return true
-    }
-    */
-    
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(collectionView: UICollectionView, shouldSelectItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-    return true
-    }
-    */
-    
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(collectionView: UICollectionView, shouldShowMenuForItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-    return false
-    }
-    
-    override func collectionView(collectionView: UICollectionView, canPerformAction action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) -> Bool {
-    return false
-    }
-    
-    override func collectionView(collectionView: UICollectionView, performAction action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) {
-    
-    }
-    */
 
 }
