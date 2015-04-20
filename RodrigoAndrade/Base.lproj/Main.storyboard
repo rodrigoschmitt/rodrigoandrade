@@ -167,7 +167,7 @@
                         <outlet property="lblJob" destination="jtM-Vj-HiD" id="o8u-95-bgT"/>
                         <outlet property="lblLocation" destination="FzC-i5-Oq6" id="DFa-nj-YkI"/>
                         <outlet property="lblName" destination="RUn-Vz-3dD" id="wyx-fP-b8Z"/>
-                        <segue destination="BhJ-Jv-bP3" kind="presentation" identifier="segueSkill" id="ryX-mo-e4x"/>
+                        <segue destination="BhJ-Jv-bP3" kind="presentation" identifier="segueSkill" modalPresentationStyle="overFullScreen" id="ryX-mo-e4x"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -190,11 +190,11 @@
                             </imageView>
                             <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IVR-no-fkI">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="605"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gP6-vM-xUc">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="gP6-vM-xUc">
                                     <size key="itemSize" width="340" height="480"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellDetail" id="vUl-IQ-KPF" customClass="DetailCollectionViewCell" customModule="RodrigoAndrade" customModuleProvider="target">
@@ -295,7 +295,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cyw-g8-d6o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1425" y="495"/>
+            <point key="canvasLocation" x="1720" y="550"/>
         </scene>
     </scenes>
     <resources>

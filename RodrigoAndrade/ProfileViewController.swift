@@ -67,7 +67,6 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         let category = self.skills.categories.objectAtIndex(self.indexPath.row) as! Categories
         
         let skillViewController: SkillViewController = segue.destinationViewController as! SkillViewController
-        skillViewController.backgroundImage = util.takeSnapshot(self.view)
         skillViewController.skills = category.skills
         
     }

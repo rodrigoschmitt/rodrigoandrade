@@ -13,7 +13,6 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
     @IBOutlet weak var imgBackgroundBlur: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var backgroundImage: UIImage!
     var skills: NSArray!
     
     //MARK: Custom Methods
@@ -21,14 +20,16 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        imgBackgroundBlur.image = backgroundImage
-        
         self.collectionView.backgroundColor = UIColor.clearColor()
-
-        var blurEffect = UIBlurEffect(style: .Light)
-        var blurEffectView = UIVisualEffectView(effect: blurEffect)
-        blurEffectView.frame = self.view.bounds
-        self.imgBackgroundBlur.addSubview(blurEffectView)
+        
+        self.view.backgroundColor = UIColor.clearColor()
+        
+        var effect = UIBlurEffect(style: UIBlurEffectStyle.Light)
+        var blurView = UIVisualEffectView(effect: effect)
+        
+        blurView.frame = self.view.bounds
+        
+        self.self.imgBackgroundBlur.addSubview(blurView)
         
     }
 
@@ -65,18 +66,18 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
         return cell
     }
     
-//    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-//        
-//        if (UIScreen.mainScreen().nativeBounds.height < 1334)
-//        {
-//            return CGSize(width: 152, height: 160)
-//        }
-//        else
-//        {
-//            return CGSize(width: 180, height: 188)
-//        }
-//        
-//    }
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        
+        if (UIScreen.mainScreen().nativeBounds.height < 1334)
+        {
+            return CGSize(width: 152, height: 160)
+        }
+        else
+        {
+            return CGSize(width: 350, height: 500)
+        }
+        
+    }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
