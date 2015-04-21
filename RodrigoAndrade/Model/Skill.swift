@@ -47,6 +47,16 @@ class Skill: NSObject {
         }
     }
     
+    var period: String? {
+        get {
+            if self.plistDict.objectForKey("period") != nil {
+                return self.plistDict.objectForKey("period") as? String
+            }
+            
+            return nil
+        }
+    }
+    
     var link: String {
         get {
             return self.plistDict.objectForKey("link") as! String

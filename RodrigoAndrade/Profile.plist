@@ -32,20 +32,24 @@
 				<string>iOS developer and technical leader for mobile teams. Creation of RBS&apos; mobile team and iOS development.</string>
 				<key>since</key>
 				<date>2011-01-03T02:00:00Z</date>
+				<key>period</key>
+				<string>January 2014 – Present</string>
 				<key>link</key>
 				<string>https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile</string>
 			</dict>
 			<dict>
 				<key>photo</key>
-				<string></string>
+				<string>Mobimarket_remote01</string>
 				<key>name</key>
 				<string>MobiMarket</string>
 				<key>title</key>
-				<string>iOS Developer</string>
+				<string>I&apos;ve worked full-time from Home Office for MobiMarket</string>
 				<key>detail</key>
 				<string>I&apos;ve worked full-time from Home Office for MobiMarket, and created Apps like Estadão, Caras, Valor Econômico, McDonald&apos;s etc.</string>
 				<key>since</key>
-				<date>2015-04-19T19:03:37Z</date>
+				<date>2009-08-03T03:00:00Z</date>
+				<key>period</key>
+				<string>August 2009 – December 2010</string>
 				<key>link</key>
 				<string>https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile</string>
 			</dict>

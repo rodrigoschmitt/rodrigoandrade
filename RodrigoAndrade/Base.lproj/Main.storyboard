@@ -250,17 +250,17 @@
                                         </view>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstItem="RjX-Vc-ugY" firstAttribute="top" secondItem="vUl-IQ-KPF" secondAttribute="topMargin" id="1vv-xm-5Kr"/>
                                             <constraint firstItem="xmD-qT-H4z" firstAttribute="top" secondItem="BXQ-pN-CJk" secondAttribute="bottom" constant="8" id="6gk-e3-2h0"/>
                                             <constraint firstItem="GXN-G1-7to" firstAttribute="centerX" secondItem="qBo-Hn-0Hz" secondAttribute="centerX" id="73S-Z8-UTA"/>
+                                            <constraint firstItem="RjX-Vc-ugY" firstAttribute="trailing" secondItem="vUl-IQ-KPF" secondAttribute="trailingMargin" id="86i-w0-3w7"/>
                                             <constraint firstItem="BXQ-pN-CJk" firstAttribute="centerX" secondItem="xmD-qT-H4z" secondAttribute="centerX" constant="-0.5" id="8MI-z2-wiH"/>
                                             <constraint firstItem="BXQ-pN-CJk" firstAttribute="top" secondItem="GXN-G1-7to" secondAttribute="bottom" constant="9" id="Crf-bg-v3b"/>
                                             <constraint firstItem="GXN-G1-7to" firstAttribute="width" secondItem="BXQ-pN-CJk" secondAttribute="width" id="PP9-jh-6bf"/>
                                             <constraint firstItem="GXN-G1-7to" firstAttribute="centerX" secondItem="BXQ-pN-CJk" secondAttribute="centerX" id="WvP-Iy-BTq"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="qBo-Hn-0Hz" secondAttribute="trailing" constant="-8" id="XNT-ZC-fhH"/>
                                             <constraint firstItem="GXN-G1-7to" firstAttribute="top" secondItem="qBo-Hn-0Hz" secondAttribute="bottom" constant="9" id="ZQL-cL-A6Y"/>
-                                            <constraint firstItem="RjX-Vc-ugY" firstAttribute="trailing" secondItem="vUl-IQ-KPF" secondAttribute="trailingMargin" id="aPx-Gd-9vB"/>
                                             <constraint firstItem="qBo-Hn-0Hz" firstAttribute="top" secondItem="vUl-IQ-KPF" secondAttribute="topMargin" constant="-8" id="dn5-vh-KwZ"/>
+                                            <constraint firstItem="RjX-Vc-ugY" firstAttribute="top" secondItem="vUl-IQ-KPF" secondAttribute="topMargin" id="kat-Yh-5FH"/>
                                             <constraint firstItem="qBo-Hn-0Hz" firstAttribute="leading" secondItem="vUl-IQ-KPF" secondAttribute="leadingMargin" constant="-8" id="oWy-fC-t3d"/>
                                         </constraints>
                                         <connections>
@@ -319,13 +319,13 @@
                                         <constraints>
                                             <constraint firstItem="fgs-DR-OBe" firstAttribute="centerX" secondItem="VwO-Kw-84U" secondAttribute="centerX" constant="-0.5" id="1ed-s8-4UN"/>
                                             <constraint firstItem="VwO-Kw-84U" firstAttribute="top" secondItem="fgs-DR-OBe" secondAttribute="bottom" constant="23" id="5x8-JL-qZO"/>
+                                            <constraint firstItem="XrR-cQ-7ob" firstAttribute="trailing" secondItem="91g-uk-mCz" secondAttribute="trailingMargin" id="637-cf-aGz"/>
                                             <constraint firstItem="ory-Pv-INM" firstAttribute="leading" secondItem="91g-uk-mCz" secondAttribute="leadingMargin" constant="-8" id="M9b-Oq-jc4"/>
                                             <constraint firstItem="ory-Pv-INM" firstAttribute="top" secondItem="91g-uk-mCz" secondAttribute="topMargin" constant="-8" id="UsP-0H-pRZ"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="ory-Pv-INM" secondAttribute="trailing" constant="-8" id="Zps-Tu-AqM"/>
-                                            <constraint firstItem="XrR-cQ-7ob" firstAttribute="leading" secondItem="91g-uk-mCz" secondAttribute="leadingMargin" constant="310" id="eJq-o4-4a2"/>
+                                            <constraint firstItem="XrR-cQ-7ob" firstAttribute="top" secondItem="91g-uk-mCz" secondAttribute="topMargin" id="b47-dZ-fco"/>
                                             <constraint firstItem="fgs-DR-OBe" firstAttribute="top" secondItem="ory-Pv-INM" secondAttribute="bottom" constant="9" id="ejF-5x-IKj"/>
                                             <constraint firstItem="fgs-DR-OBe" firstAttribute="centerX" secondItem="ory-Pv-INM" secondAttribute="centerX" id="eve-eW-0dO"/>
-                                            <constraint firstItem="XrR-cQ-7ob" firstAttribute="top" secondItem="91g-uk-mCz" secondAttribute="topMargin" id="spI-jM-Uc2"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="lblLocation" destination="VwO-Kw-84U" id="Pgz-1X-I9h"/>
