@@ -52,62 +52,62 @@
 		</array>
 		<key>Apps</key>
 		<array>
-            <dict>
-                <key>photo</key>
-                <string>GremistaZH</string>
-                <key>name</key>
-                <string>Gremista ZH</string>
-                <key>title</key>
-                <string>App for calculation of taxes of Brazilian workers</string>
-                <key>detail</key>
-                <string></string>
-                <key>since</key>
-                <date>2013-05-22T03:00:00Z</date>
-                <key>link</key>
-                <string>https://itunes.apple.com/br/app/contabil/id327237594?l=en&amp;mt=8</string>
-            </dict>
-            <dict>
-                <key>photo</key>
-                <string>ColoradoZH</string>
-                <key>name</key>
-                <string>Colorado ZH</string>
-                <key>title</key>
-                <string>App for calculation of taxes of Brazilian workers</string>
-                <key>detail</key>
-                <string></string>
-                <key>since</key>
-                <date>2013-05-22T03:00:00Z</date>
-                <key>link</key>
-                <string>https://itunes.apple.com/br/app/colorado-zh/id650060590?l=en&amp;mt=8</string>
-            </dict>
-            <dict>
-                <key>photo</key>
-                <string>ZeroHora</string>
-                <key>name</key>
-                <string>Zero Hora</string>
-                <key>title</key>
-                <string>App for calculation of taxes of Brazilian workers</string>
-                <key>detail</key>
-                <string></string>
-                <key>since</key>
-                <date>2013-01-02T02:00:00Z</date>
-                <key>link</key>
-                <string>https://itunes.apple.com/br/app/zero-hora/id415470445?l=en&amp;mt=8</string>
-            </dict>
-            <dict>
-                <key>photo</key>
-                <string>Contabil</string>
-                <key>name</key>
-                <string>Contábil</string>
-                <key>title</key>
-                <string>App for calculation of taxes of Brazilian workers</string>
-                <key>detail</key>
-                <string></string>
-                <key>since</key>
-                <date>2009-08-29T03:00:00Z</date>
-                <key>link</key>
-                <string>https://itunes.apple.com/br/app/contabil/id327237594?l=en&amp;mt=8</string>
-            </dict>
+			<dict>
+				<key>photo</key>
+				<string>GremistaZH</string>
+				<key>name</key>
+				<string>Gremista ZH</string>
+				<key>title</key>
+				<string>App for calculation of taxes of Brazilian workers</string>
+				<key>detail</key>
+				<string></string>
+				<key>since</key>
+				<date>2013-05-22T03:00:00Z</date>
+				<key>link</key>
+				<string>https://itunes.apple.com/br/app/contabil/id327237594?l=en&amp;mt=8</string>
+			</dict>
+			<dict>
+				<key>photo</key>
+				<string>ColoradoZH</string>
+				<key>name</key>
+				<string>Colorado ZH</string>
+				<key>title</key>
+				<string>App for calculation of taxes of Brazilian workers</string>
+				<key>detail</key>
+				<string></string>
+				<key>since</key>
+				<date>2013-05-22T03:00:00Z</date>
+				<key>link</key>
+				<string>https://itunes.apple.com/br/app/colorado-zh/id650060590?l=en&amp;mt=8</string>
+			</dict>
+			<dict>
+				<key>photo</key>
+				<string>ZeroHora</string>
+				<key>name</key>
+				<string>Zero Hora</string>
+				<key>title</key>
+				<string>App for calculation of taxes of Brazilian workers</string>
+				<key>detail</key>
+				<string></string>
+				<key>since</key>
+				<date>2013-01-02T02:00:00Z</date>
+				<key>link</key>
+				<string>https://itunes.apple.com/br/app/zero-hora/id415470445?l=en&amp;mt=8</string>
+			</dict>
+			<dict>
+				<key>photo</key>
+				<string>Contabil</string>
+				<key>name</key>
+				<string>Contábil</string>
+				<key>title</key>
+				<string>App for calculation of taxes of Brazilian workers</string>
+				<key>detail</key>
+				<string></string>
+				<key>since</key>
+				<date>2009-08-29T03:00:00Z</date>
+				<key>link</key>
+				<string>https://itunes.apple.com/br/app/contabil/id327237594?l=en&amp;mt=8</string>
+			</dict>
 			<dict>
 				<key>photo</key>
 				<string>Entregas</string>
@@ -172,7 +172,7 @@
 		<array>
 			<dict>
 				<key>photo</key>
-				<string>Faculdade_SenacRS</string>
+				<string>senac-faculdade</string>
 				<key>name</key>
 				<string>Faculdade SENACRS</string>
 				<key>title</key>
