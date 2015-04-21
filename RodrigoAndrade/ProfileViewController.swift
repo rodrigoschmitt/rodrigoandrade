@@ -13,12 +13,17 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     @IBOutlet weak var imgProfile: UIImageView!
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblJob: UILabel!
-    @IBOutlet weak var lblLocation: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var btnLocation: UIButton!
     
     var skills: Skills!
     var indexPath: NSIndexPath!
     let util = Util()
+    
+    //MARK: Methods of UIButton (IBAction)
+    @IBAction func locationButtonPressed(sender: AnyObject) {
+    
+    }
     
     //MARK: Custom Methods
     
@@ -32,7 +37,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         lblName.text = profile.name
         lblJob.text = profile.job
         
-        lblLocation.text = location.name
+        btnLocation.setTitle(location.name, forState: UIControlState.Normal)
         
         self.skills = profile.skills
         

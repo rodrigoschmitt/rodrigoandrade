@@ -15,8 +15,4 @@ class DetailCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblPeriod: UILabel!
     
-    @IBAction func doneButtonPressed(sender: AnyObject) {
-        
-    }
-    
 }
