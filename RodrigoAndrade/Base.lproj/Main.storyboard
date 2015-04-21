@@ -245,17 +245,29 @@
                                                         <constraint firstAttribute="height" constant="14" id="dX6-nH-d2u"/>
                                                     </constraints>
                                                 </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5z-gj-BfL">
+                                                    <rect key="frame" x="155" y="437" width="30" height="29"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <state key="normal" title="...">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="linkButtonPressed:" destination="BhJ-Jv-bP3" eventType="touchUpInside" id="YgD-4X-eFS"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
+                                            <constraint firstItem="b5z-gj-BfL" firstAttribute="top" secondItem="xmD-qT-H4z" secondAttribute="bottom" constant="2" id="4Pc-gp-NgO"/>
                                             <constraint firstItem="xmD-qT-H4z" firstAttribute="top" secondItem="BXQ-pN-CJk" secondAttribute="bottom" constant="8" id="6gk-e3-2h0"/>
                                             <constraint firstItem="GXN-G1-7to" firstAttribute="centerX" secondItem="qBo-Hn-0Hz" secondAttribute="centerX" id="73S-Z8-UTA"/>
                                             <constraint firstItem="RjX-Vc-ugY" firstAttribute="trailing" secondItem="vUl-IQ-KPF" secondAttribute="trailingMargin" id="86i-w0-3w7"/>
                                             <constraint firstItem="BXQ-pN-CJk" firstAttribute="centerX" secondItem="xmD-qT-H4z" secondAttribute="centerX" constant="-0.5" id="8MI-z2-wiH"/>
                                             <constraint firstItem="BXQ-pN-CJk" firstAttribute="top" secondItem="GXN-G1-7to" secondAttribute="bottom" constant="9" id="Crf-bg-v3b"/>
                                             <constraint firstItem="GXN-G1-7to" firstAttribute="width" secondItem="BXQ-pN-CJk" secondAttribute="width" id="PP9-jh-6bf"/>
+                                            <constraint firstItem="b5z-gj-BfL" firstAttribute="centerX" secondItem="xmD-qT-H4z" secondAttribute="centerX" constant="-0.5" id="VCm-J9-xwr"/>
                                             <constraint firstItem="GXN-G1-7to" firstAttribute="centerX" secondItem="BXQ-pN-CJk" secondAttribute="centerX" id="WvP-Iy-BTq"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="qBo-Hn-0Hz" secondAttribute="trailing" constant="-8" id="XNT-ZC-fhH"/>
                                             <constraint firstItem="GXN-G1-7to" firstAttribute="top" secondItem="qBo-Hn-0Hz" secondAttribute="bottom" constant="9" id="ZQL-cL-A6Y"/>
@@ -264,6 +276,7 @@
                                             <constraint firstItem="qBo-Hn-0Hz" firstAttribute="leading" secondItem="vUl-IQ-KPF" secondAttribute="leadingMargin" constant="-8" id="oWy-fC-t3d"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="btnLink" destination="b5z-gj-BfL" id="gAU-LM-2SN"/>
                                             <outlet property="imgSkill" destination="qBo-Hn-0Hz" id="tvA-mq-cRJ"/>
                                             <outlet property="lblName" destination="GXN-G1-7to" id="zkj-IR-hsU"/>
                                             <outlet property="lblPeriod" destination="xmD-qT-H4z" id="0oH-di-nvA"/>

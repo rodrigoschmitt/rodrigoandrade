@@ -26,6 +26,12 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
         
     }
     
+    @IBAction func linkButtonPressed(sender: UIButton) {
+        let skill: Skill = self.skills.objectAtIndex(sender.tag) as! Skill
+        
+        UIApplication.sharedApplication().openURL(NSURL(string:skill.link)!)
+    }
+    
     //MARK: Custom Methods
     
     override func viewDidLoad() {
@@ -95,9 +101,18 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
                 cell.lblPeriod.text = skill.period
             }
             
+            if skill.linkButton == nil {
+                cell.btnLink.hidden = true
+            }
+            else
+            {
+                cell.btnLink.hidden = false
+                cell.btnLink.setTitle(skill.linkButton, forState: UIControlState.Normal)
+                cell.btnLink.tag = indexPath.row
+            }
+            
             cell.layer.masksToBounds = true
             cell.layer.cornerRadius = 4
-            
             
             return cell
         }

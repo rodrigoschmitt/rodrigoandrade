@@ -62,5 +62,15 @@ class Skill: NSObject {
             return self.plistDict.objectForKey("link") as! String
         }
     }
+    
+    var linkButton: String? {
+        get {
+            if self.plistDict.objectForKey("linkButton") != nil {
+                return self.plistDict.objectForKey("linkButton") as? String
+            }
+            
+            return nil
+        }
+    }
    
 }

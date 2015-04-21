@@ -14,5 +14,6 @@ class DetailCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblPeriod: UILabel!
+    @IBOutlet weak var btnLink: UIButton!
     
 }
