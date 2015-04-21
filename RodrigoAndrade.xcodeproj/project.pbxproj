@@ -15,6 +15,7 @@
 		4A6669391AE1432F0004AC3C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6669381AE1432F0004AC3C /* ProfileViewController.swift */; };
 		8109716C1AE4549800805696 /* SkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8109716B1AE4549800805696 /* SkillViewController.swift */; };
 		810971731AE47AF700805696 /* DetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810971721AE47AF700805696 /* DetailCollectionViewCell.swift */; };
+		810D16601AE6032400FC75D7 /* MapCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810D165F1AE6032400FC75D7 /* MapCollectionViewCell.swift */; };
 		81BB1C4D1AE2E8F000502B63 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BB1C4C1AE2E8F000502B63 /* Util.swift */; };
 		81BB1C521AE2F9A200502B63 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BB1C511AE2F9A200502B63 /* Profile.swift */; };
 		81BB1C541AE2F9B800502B63 /* RAManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BB1C531AE2F9B800502B63 /* RAManager.swift */; };
@@ -49,6 +50,7 @@
 		4A6669381AE1432F0004AC3C /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		8109716B1AE4549800805696 /* SkillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SkillViewController.swift; path = Controller/SkillViewController.swift; sourceTree = "<group>"; };
 		810971721AE47AF700805696 /* DetailCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailCollectionViewCell.swift; path = Controller/DetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		810D165F1AE6032400FC75D7 /* MapCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapCollectionViewCell.swift; path = Controller/MapCollectionViewCell.swift; sourceTree = "<group>"; };
 		81BB1C4C1AE2E8F000502B63 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		81BB1C511AE2F9A200502B63 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Profile.swift; path = Model/Profile.swift; sourceTree = "<group>"; };
 		81BB1C531AE2F9B800502B63 /* RAManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RAManager.swift; path = Model/RAManager.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				81D043CD1AE3F40800FEEAA3 /* SkillCollectionViewCell.swift */,
 				8109716B1AE4549800805696 /* SkillViewController.swift */,
 				810971721AE47AF700805696 /* DetailCollectionViewCell.swift */,
+				810D165F1AE6032400FC75D7 /* MapCollectionViewCell.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				81BB1C4D1AE2E8F000502B63 /* Util.swift in Sources */,
 				81D043CE1AE3F40800FEEAA3 /* SkillCollectionViewCell.swift in Sources */,
 				81BB1C5C1AE3350F00502B63 /* Skills.swift in Sources */,
+				810D16601AE6032400FC75D7 /* MapCollectionViewCell.swift in Sources */,
 				81BB1C601AE3524C00502B63 /* Categories.swift in Sources */,
 				81BB1C5E1AE3523100502B63 /* Skill.swift in Sources */,
 				81BB1C5A1AE32D2800502B63 /* Location.swift in Sources */,

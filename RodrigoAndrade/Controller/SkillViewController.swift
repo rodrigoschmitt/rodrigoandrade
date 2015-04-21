@@ -14,6 +14,8 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
     @IBOutlet weak var collectionView: UICollectionView!
     
     var skills: NSArray!
+    var showMapLocation: Bool = false
+    var location: Location!
     
     //MARK: Custom Methods
     
@@ -50,29 +52,48 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.skills.count
+        if showMapLocation {
+            return 1
+        } else {
+            return self.skills.count
+        }
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CellDetail", forIndexPath: indexPath) as! DetailCollectionViewCell
         
-        let skill: Skill = self.skills.objectAtIndex(indexPath.row) as! Skill
+        if showMapLocation {
+            let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CellMap", forIndexPath: indexPath) as! MapCollectionViewCell
+            cell.showLocation(self.location.latitude, longitude: self.location.longitude, locationName: self.location.name)
+            cell.layer.masksToBounds = true
+            cell.layer.cornerRadius = 4
+            
+            return cell
+            
+        } else {
+            let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CellDetail", forIndexPath: indexPath) as! DetailCollectionViewCell
+            
+            let skill: Skill = self.skills.objectAtIndex(indexPath.row) as! Skill
+            
+            cell.lblName.text = skill.name
+            cell.imgSkill.image = skill.photo
+            cell.lblTitle.text = skill.title
+            cell.layer.masksToBounds = true
+            cell.layer.cornerRadius = 4
+            
+            let util = Util()
+            cell.lblPeriod.text = util.formatDate(skill.since)
+            
+            return cell
+        }
         
-        cell.lblName.text = skill.name
-        cell.imgSkill.image = skill.photo
-        cell.lblTitle.text = skill.title
         
-        let util = Util()
-        cell.lblPeriod.text = util.formatDate(skill.since)
-        
-        return cell
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         
         if (UIScreen.mainScreen().nativeBounds.height < 1334)
         {
-            return CGSize(width: 300, height: 480)
+            return CGSize(width: 300, height: 460)
         }
         else
         {
@@ -83,7 +104,7 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
-        self.dismissViewControllerAnimated(true, completion: nil)
+//        self.dismissViewControllerAnimated(true, completion: nil)
         
     }
     

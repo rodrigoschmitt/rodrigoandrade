@@ -25,7 +25,7 @@ class RAManager: NSObject {
         let location = Location()
         location.name = plistDict?.objectForKey("location")?.objectForKey("name") as! String
         location.latitude = plistDict?.objectForKey("location")?.objectForKey("latitude") as! Double
-        location.latitude = plistDict?.objectForKey("location")?.objectForKey("longitude") as! Double
+        location.longitude = plistDict?.objectForKey("location")?.objectForKey("longitude") as! Double
         
         profile.location = location
         

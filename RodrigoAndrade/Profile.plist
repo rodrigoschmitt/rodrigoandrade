@@ -13,9 +13,9 @@
 		<key>name</key>
 		<string>Porto Alegre, RS, Brazil</string>
 		<key>latitude</key>
-		<real>-30.1088701</real>
+		<real>-30.031391</real>
 		<key>longitude</key>
-		<real>-51.176904611</real>
+		<real>-51.20568</real>
 	</dict>
 	<key>skills</key>
 	<dict>
@@ -58,9 +58,9 @@
 				<key>name</key>
 				<string>Gremista ZH</string>
 				<key>title</key>
-				<string>App for calculation of taxes of Brazilian workers</string>
+				<string>App for whose goal is to allow fans to follow their favorite team from anywhere.</string>
 				<key>detail</key>
-				<string></string>
+				<string>App for whose goal is to allow fans to follow their favorite team from anywhere. Through this app, fans can read news, watch videos, view the team&apos;s schedule, follow championships, receive notifications and check the matches statistics in real time.</string>
 				<key>since</key>
 				<date>2013-05-22T03:00:00Z</date>
 				<key>link</key>
@@ -72,9 +72,9 @@
 				<key>name</key>
 				<string>Colorado ZH</string>
 				<key>title</key>
-				<string>App for calculation of taxes of Brazilian workers</string>
+				<string>App for whose goal is to allow fans to follow their favorite team from anywhere.</string>
 				<key>detail</key>
-				<string></string>
+				<string>App for whose goal is to allow fans to follow their favorite team from anywhere. Through this app, fans can read news, watch videos, view the team&apos;s schedule, follow championships, receive notifications and check the matches statistics in real time.</string>
 				<key>since</key>
 				<date>2013-05-22T03:00:00Z</date>
 				<key>link</key>
@@ -86,7 +86,7 @@
 				<key>name</key>
 				<string>Zero Hora</string>
 				<key>title</key>
-				<string>App for calculation of taxes of Brazilian workers</string>
+				<string>App for iPhone and iPad of the main newspaper in RS, Southern Brazil.</string>
 				<key>detail</key>
 				<string></string>
 				<key>since</key>

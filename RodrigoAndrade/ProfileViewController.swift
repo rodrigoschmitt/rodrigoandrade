@@ -17,12 +17,13 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     @IBOutlet weak var btnLocation: UIButton!
     
     var skills: Skills!
+    var location: Location!
     var indexPath: NSIndexPath!
     let util = Util()
     
     //MARK: Methods of UIButton (IBAction)
     @IBAction func locationButtonPressed(sender: AnyObject) {
-    
+        performSegueWithIdentifier("segueSkill", sender: sender)
     }
     
     //MARK: Custom Methods
@@ -31,13 +32,13 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         
         let raManager = RAManager()
         let profile = raManager.requestProfile()
-        let location = profile.location
+        self.location = profile.location
         
         imgProfile.image = profile.avatar
         lblName.text = profile.name
         lblJob.text = profile.job
         
-        btnLocation.setTitle(location.name, forState: UIControlState.Normal)
+        btnLocation.setTitle(self.location.name, forState: UIControlState.Normal)
         
         self.skills = profile.skills
         
@@ -67,12 +68,18 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        
-        let category = self.skills.categories.objectAtIndex(self.indexPath.row) as! Categories
         
         let skillViewController: SkillViewController = segue.destinationViewController as! SkillViewController
-        skillViewController.skills = category.skills
+        
+        if sender is UIButton {
+            skillViewController.showMapLocation = true
+            skillViewController.location = self.location
+            
+        } else {
+            let category = self.skills.categories.objectAtIndex(self.indexPath.row) as! Categories
+            skillViewController.skills = category.skills
+        }
+    
         
     }
     
@@ -102,7 +109,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
             
-        if (UIScreen.mainScreen().nativeBounds.height < 1334)
+        if UIScreen.mainScreen().nativeBounds.height < 1334
         {
             return CGSize(width: 152, height: 160)
         }

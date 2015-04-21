@@ -31,8 +31,8 @@ class Util: NSObject {
         var resultMonth = dateComponentNow.month - dateComponentBirth.month
         var resultDay = dateComponentNow.day - dateComponentBirth.day
         
-        if (resultYear < 1) {
-            if (resultMonth == 0) {
+        if resultYear < 1 {
+            if resultMonth == 0 {
                 if (resultDay <= 1) {
                     return "\(resultDay) day"
                 }
@@ -41,7 +41,7 @@ class Util: NSObject {
                 }
             }
             else {
-                if (resultMonth <= 1) {
+                if resultMonth <= 1 {
                     return "\(resultMonth) month"
                 }
                 else {
@@ -49,7 +49,7 @@ class Util: NSObject {
                 }
             }
         } else {
-            if (resultYear == 1) {
+            if resultYear == 1 {
                 return "\(resultYear) year"
             } else {
                 return "\(resultYear) years"   
