@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -293,13 +293,19 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="close" translatesAutoresizingMaskIntoConstraints="NO" id="B6t-C4-7hC">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XrR-cQ-7ob">
                                                     <rect key="frame" x="318" y="8" width="14" height="14"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="14" id="F57-D2-w1q"/>
-                                                        <constraint firstAttribute="height" constant="14" id="Zo3-tw-7dk"/>
+                                                        <constraint firstAttribute="width" constant="14" id="3Ed-e0-akD"/>
+                                                        <constraint firstAttribute="height" constant="14" id="FyE-ur-8KA"/>
                                                     </constraints>
-                                                </imageView>
+                                                    <state key="normal" image="close">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="doneButtonPressed:" destination="BhJ-Jv-bP3" eventType="touchUpInside" id="VAh-lo-XS6"/>
+                                                    </connections>
+                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VwO-Kw-84U">
                                                     <rect key="frame" x="153" y="407" width="35" height="17"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
@@ -313,13 +319,13 @@
                                         <constraints>
                                             <constraint firstItem="fgs-DR-OBe" firstAttribute="centerX" secondItem="VwO-Kw-84U" secondAttribute="centerX" constant="-0.5" id="1ed-s8-4UN"/>
                                             <constraint firstItem="VwO-Kw-84U" firstAttribute="top" secondItem="fgs-DR-OBe" secondAttribute="bottom" constant="23" id="5x8-JL-qZO"/>
-                                            <constraint firstItem="B6t-C4-7hC" firstAttribute="trailing" secondItem="91g-uk-mCz" secondAttribute="trailingMargin" id="6EY-SF-taP"/>
                                             <constraint firstItem="ory-Pv-INM" firstAttribute="leading" secondItem="91g-uk-mCz" secondAttribute="leadingMargin" constant="-8" id="M9b-Oq-jc4"/>
                                             <constraint firstItem="ory-Pv-INM" firstAttribute="top" secondItem="91g-uk-mCz" secondAttribute="topMargin" constant="-8" id="UsP-0H-pRZ"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="ory-Pv-INM" secondAttribute="trailing" constant="-8" id="Zps-Tu-AqM"/>
+                                            <constraint firstItem="XrR-cQ-7ob" firstAttribute="leading" secondItem="91g-uk-mCz" secondAttribute="leadingMargin" constant="310" id="eJq-o4-4a2"/>
                                             <constraint firstItem="fgs-DR-OBe" firstAttribute="top" secondItem="ory-Pv-INM" secondAttribute="bottom" constant="9" id="ejF-5x-IKj"/>
                                             <constraint firstItem="fgs-DR-OBe" firstAttribute="centerX" secondItem="ory-Pv-INM" secondAttribute="centerX" id="eve-eW-0dO"/>
-                                            <constraint firstItem="B6t-C4-7hC" firstAttribute="top" secondItem="91g-uk-mCz" secondAttribute="topMargin" id="ipC-UX-28Z"/>
+                                            <constraint firstItem="XrR-cQ-7ob" firstAttribute="top" secondItem="91g-uk-mCz" secondAttribute="topMargin" id="spI-jM-Uc2"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="lblLocation" destination="VwO-Kw-84U" id="Pgz-1X-I9h"/>

@@ -17,6 +17,14 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
     var showMapLocation: Bool = false
     var location: Location!
     
+    //MARK: Methods of UIButton (IBAction)
+    
+    @IBAction func doneButtonPressed(sender: AnyObject) {
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
+    
     //MARK: Custom Methods
     
     override func viewDidLoad() {
@@ -104,7 +112,9 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
-//        self.dismissViewControllerAnimated(true, completion: nil)
+        if !showMapLocation {
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
         
     }
     
