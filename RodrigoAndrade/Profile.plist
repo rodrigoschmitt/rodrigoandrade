@@ -30,8 +30,6 @@
 				<string>iOS Software Engineer / Tech Leader</string>
 				<key>detail</key>
 				<string>iOS developer and technical leader for mobile teams. Creation of RBS&apos; mobile team and iOS development.</string>
-				<key>period</key>
-				<string>January 2011 – Present</string>
 				<key>since</key>
 				<date>2011-01-03T02:00:00Z</date>
 				<key>link</key>
@@ -46,8 +44,6 @@
 				<string>iOS Developer</string>
 				<key>detail</key>
 				<string>I&apos;ve worked full-time from Home Office for MobiMarket, and created Apps like Estadão, Caras, Valor Econômico, McDonald&apos;s etc.</string>
-				<key>period</key>
-				<string>August 2009 – December 2010</string>
 				<key>since</key>
 				<date>2015-04-19T19:03:37Z</date>
 				<key>link</key>
@@ -65,8 +61,6 @@
 				<string>First Brazilian application for shipping calculation of posts and orders tracking</string>
 				<key>detail</key>
 				<string></string>
-				<key>period</key>
-				<string></string>
 				<key>since</key>
 				<date>2009-07-05T03:00:00Z</date>
 				<key>link</key>
@@ -74,19 +68,59 @@
 			</dict>
 			<dict>
 				<key>photo</key>
-				<string></string>
+				<string>Contabil</string>
 				<key>name</key>
-				<string></string>
+				<string>Contábil</string>
 				<key>title</key>
-				<string></string>
+				<string>App for calculation of taxes of Brazilian workers</string>
 				<key>detail</key>
 				<string></string>
-				<key>period</key>
+				<key>since</key>
+				<date>2009-08-29T03:00:00Z</date>
+				<key>link</key>
+				<string>https://itunes.apple.com/br/app/contabil/id327237594?l=en&amp;mt=8</string>
+			</dict>
+			<dict>
+				<key>photo</key>
+				<string>ZeroHora</string>
+				<key>name</key>
+				<string>Zero Hora</string>
+				<key>title</key>
+				<string>App for calculation of taxes of Brazilian workers</string>
+				<key>detail</key>
 				<string></string>
 				<key>since</key>
-				<date>2015-04-19T19:03:24Z</date>
+				<date>2013-01-02T02:00:00Z</date>
 				<key>link</key>
+				<string>https://itunes.apple.com/br/app/zero-hora/id415470445?l=en&amp;mt=8</string>
+			</dict>
+			<dict>
+				<key>photo</key>
+				<string>GremistaZH</string>
+				<key>name</key>
+				<string>Gremista ZH</string>
+				<key>title</key>
+				<string>App for calculation of taxes of Brazilian workers</string>
+				<key>detail</key>
 				<string></string>
+				<key>since</key>
+				<date>2013-05-22T03:00:00Z</date>
+				<key>link</key>
+				<string>https://itunes.apple.com/br/app/contabil/id327237594?l=en&amp;mt=8</string>
+			</dict>
+			<dict>
+				<key>photo</key>
+				<string>ColoradoZH</string>
+				<key>name</key>
+				<string>Colorado ZH</string>
+				<key>title</key>
+				<string>App for calculation of taxes of Brazilian workers</string>
+				<key>detail</key>
+				<string></string>
+				<key>since</key>
+				<date>2013-05-22T03:00:00Z</date>
+				<key>link</key>
+				<string>https://itunes.apple.com/br/app/colorado-zh/id650060590?l=en&amp;mt=8</string>
 			</dict>
 		</array>
 		<key>Lectures</key>
@@ -100,8 +134,6 @@
 				<string>iOS Development with Unit Testes and Xcode Server</string>
 				<key>detail</key>
 				<string></string>
-				<key>period</key>
-				<string>March 26 - 2015</string>
 				<key>since</key>
 				<date>2015-03-26T22:00:00Z</date>
 				<key>link</key>
@@ -109,17 +141,29 @@
 			</dict>
 			<dict>
 				<key>photo</key>
-				<string>SenacRS</string>
+				<string>Igrejinha</string>
 				<key>name</key>
-				<string>SENACRS</string>
+				<string>Igrejinha</string>
 				<key>title</key>
 				<string>Mobile market and iOS development</string>
 				<key>detail</key>
 				<string></string>
-				<key>period</key>
-				<string>October 26 - 2011</string>
 				<key>since</key>
-				<date>2015-04-19T19:03:31Z</date>
+				<date>2012-07-05T23:00:00Z</date>
+				<key>link</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>photo</key>
+				<string>SenacRS</string>
+				<key>name</key>
+				<string>SenacRS</string>
+				<key>title</key>
+				<string>Mobile market and iOS development</string>
+				<key>detail</key>
+				<string></string>
+				<key>since</key>
+				<date>2011-10-26T22:00:00Z</date>
 				<key>link</key>
 				<string></string>
 			</dict>
@@ -128,14 +172,12 @@
 		<array>
 			<dict>
 				<key>photo</key>
-				<string>Faculdade_SENACRS</string>
+				<string>Faculdade_SenacRS</string>
 				<key>name</key>
 				<string>Faculdade SENACRS</string>
 				<key>title</key>
-				<string></string>
+				<string>Software Analisis and Development, Technologist</string>
 				<key>detail</key>
-				<string></string>
-				<key>period</key>
 				<string></string>
 				<key>since</key>
 				<date>2007-03-05T22:15:00Z</date>
@@ -144,17 +186,15 @@
 			</dict>
 			<dict>
 				<key>photo</key>
-				<string></string>
+				<string>Ulbra</string>
 				<key>name</key>
-				<string></string>
+				<string>Ulbra University</string>
 				<key>title</key>
-				<string></string>
+				<string>Software Analisis and Development, Technologist</string>
 				<key>detail</key>
 				<string></string>
-				<key>period</key>
-				<string></string>
 				<key>since</key>
-				<date>2015-04-19T19:03:43Z</date>
+				<date>2004-01-12T21:00:00Z</date>
 				<key>link</key>
 				<string></string>
 			</dict>

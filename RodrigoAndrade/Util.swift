@@ -27,7 +27,6 @@ class Util: NSObject {
         var dateComponentNow : NSDateComponents = calendar.components(unitFlags, fromDate: NSDate())
         var dateComponentBirth : NSDateComponents = calendar.components(unitFlags, fromDate: birthday)
         
-        
         var resultYear = dateComponentNow.year - dateComponentBirth.year
         var resultMonth = dateComponentNow.month - dateComponentBirth.month
         var resultDay = dateComponentNow.day - dateComponentBirth.day
@@ -57,6 +56,16 @@ class Util: NSObject {
             }
         }
     
+    }
+    
+    func formatDate (originalDate: NSDate) -> String {
+        
+        let dayTimePeriodFormatter = NSDateFormatter()
+        dayTimePeriodFormatter.dateFormat = "MMMM dd, yyyy"
+        
+        let dateString = dayTimePeriodFormatter.stringFromDate(originalDate)
+        
+        return dateString
     }
     
     func takeSnapshot(view: UIView) -> UIImage {

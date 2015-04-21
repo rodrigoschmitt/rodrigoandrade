@@ -61,7 +61,9 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
         cell.lblName.text = skill.name
         cell.imgSkill.image = skill.photo
         cell.lblTitle.text = skill.title
-        cell.lblPeriod.text = skill.period
+        
+        let util = Util()
+        cell.lblPeriod.text = util.formatDate(skill.since)
         
         return cell
     }
@@ -70,7 +72,7 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
         
         if (UIScreen.mainScreen().nativeBounds.height < 1334)
         {
-            return CGSize(width: 152, height: 160)
+            return CGSize(width: 300, height: 480)
         }
         else
         {

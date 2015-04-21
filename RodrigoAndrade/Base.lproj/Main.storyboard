@@ -211,8 +211,8 @@
                                                         <constraint firstAttribute="width" constant="340" id="wGO-xr-2lr"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXN-G1-7to">
-                                                    <rect key="frame" x="133" y="349" width="74" height="35"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXN-G1-7to">
+                                                    <rect key="frame" x="39" y="349" width="262" height="35"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -255,6 +255,7 @@
                                             <constraint firstItem="BXQ-pN-CJk" firstAttribute="centerX" secondItem="xmD-qT-H4z" secondAttribute="centerX" constant="-0.5" id="8MI-z2-wiH"/>
                                             <constraint firstItem="BXQ-pN-CJk" firstAttribute="top" secondItem="GXN-G1-7to" secondAttribute="bottom" constant="9" id="Crf-bg-v3b"/>
                                             <constraint firstItem="yfZ-Pf-XEA" firstAttribute="top" secondItem="vUl-IQ-KPF" secondAttribute="topMargin" id="OFT-Xt-jgV"/>
+                                            <constraint firstItem="GXN-G1-7to" firstAttribute="width" secondItem="BXQ-pN-CJk" secondAttribute="width" id="PP9-jh-6bf"/>
                                             <constraint firstItem="GXN-G1-7to" firstAttribute="centerX" secondItem="BXQ-pN-CJk" secondAttribute="centerX" id="WvP-Iy-BTq"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="qBo-Hn-0Hz" secondAttribute="trailing" constant="-8" id="XNT-ZC-fhH"/>
                                             <constraint firstItem="GXN-G1-7to" firstAttribute="top" secondItem="qBo-Hn-0Hz" secondAttribute="bottom" constant="9" id="ZQL-cL-A6Y"/>

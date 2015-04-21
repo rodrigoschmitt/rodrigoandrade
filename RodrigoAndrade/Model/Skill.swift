@@ -41,12 +41,6 @@ class Skill: NSObject {
         }
     }
     
-    var period: String {
-        get {
-            return self.plistDict.objectForKey("period") as! String
-        }
-    }
-    
     var since: NSDate {
         get {
             return self.plistDict.objectForKey("since") as! NSDate
