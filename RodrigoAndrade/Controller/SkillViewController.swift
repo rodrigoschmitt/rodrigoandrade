@@ -8,7 +8,15 @@
 
 import UIKit
 
+protocol SkillViewControllerDelegate {
+    
+    func doneSkillViewController()
+    
+}
+
 class SkillViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    var delegate: SkillViewControllerDelegate!
     
     @IBOutlet weak var imgBackgroundBlur: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -23,7 +31,7 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     @IBAction func doneButtonPressed(sender: AnyObject) {
         
-        self.dismissViewControllerAnimated(true, completion: nil)
+        delegate.doneSkillViewController()
         
     }
     
@@ -41,12 +49,6 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
         self.collectionView.backgroundColor = UIColor.clearColor()
         self.view.backgroundColor = UIColor.clearColor()
 
-        var effect = UIBlurEffect(style: UIBlurEffectStyle.Light)
-        var blurView = UIVisualEffectView(effect: effect)
-        blurView.frame = self.view.bounds
-        
-        imgBackgroundBlur.addSubview(blurView)
-        
         pageControl.hidden = showMapLocation
         
         if !showMapLocation {
@@ -143,7 +145,7 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
         if !showMapLocation {
-            self.dismissViewControllerAnimated(true, completion: nil)
+            delegate.doneSkillViewController()
         }
         
     }

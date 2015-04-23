@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate  {
+class ProfileViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, SkillViewControllerDelegate  {
     
     @IBOutlet weak var imgProfile: UIImageView!
     @IBOutlet weak var lblName: UILabel!
@@ -20,10 +20,11 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     var location: Location!
     var indexPath: NSIndexPath!
     let util = Util()
+    var blurView = UIVisualEffectView()
     
     //MARK: - Methods of UIButton (IBAction)
     @IBAction func locationButtonPressed(sender: AnyObject) {
-        performSegueWithIdentifier("segueSkill", sender: sender)
+        openSkills(sender)
     }
     
     //MARK: - Custom Methods
@@ -43,6 +44,44 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         self.skills = profile.skills
         
         self.collectionView.reloadData()
+    }
+    
+    func openSkills(sender: AnyObject) {
+        
+        var effect = UIBlurEffect(style: UIBlurEffectStyle.Dark)
+        blurView = UIVisualEffectView(effect: effect)
+        blurView.frame = self.view.bounds
+        blurView.alpha = 0.0
+        self.view.addSubview(blurView)
+        
+        UIView.animateWithDuration(0.5, animations: {
+            
+            self.blurView.alpha = 1.0
+            
+            }, completion: nil)
+        
+        performSegueWithIdentifier("segueSkill", sender: sender)
+        
+    }
+    
+    //MARK: - Methods of SkilViewController (Delegate)
+    
+    func doneSkillViewController() {
+        
+        UIView.animateWithDuration(0.5, animations: {
+            
+            self.blurView.alpha = 0.0
+            
+            }, completion: {
+                
+                (value: Bool) in
+                
+                self.blurView.removeFromSuperview()
+                
+        })
+        
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     //MARK: - Methods of this ViewController
@@ -70,6 +109,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         let skillViewController: SkillViewController = segue.destinationViewController as! SkillViewController
+        skillViewController.delegate = self
         
         if sender is UIButton {
             skillViewController.showMapLocation = true
@@ -124,7 +164,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         
         self.indexPath = indexPath
         
-        performSegueWithIdentifier("segueSkill", sender: self)
+        openSkills(self)
         
     }
 
