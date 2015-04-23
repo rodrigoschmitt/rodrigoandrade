@@ -12,13 +12,14 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     @IBOutlet weak var imgBackgroundBlur: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var pageControl: UIPageControl!
     
     let util = Util()
     var skills: NSArray!
     var showMapLocation: Bool = false
     var location: Location!
     
-    //MARK: Methods of UIButton (IBAction)
+    //MARK: - Methods of UIButton (IBAction)
     
     @IBAction func doneButtonPressed(sender: AnyObject) {
         
@@ -32,21 +33,27 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
         UIApplication.sharedApplication().openURL(NSURL(string:skill.link)!)
     }
     
-    //MARK: Custom Methods
+    //MARK: - Custom Methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.collectionView.backgroundColor = UIColor.clearColor()
-        
         self.view.backgroundColor = UIColor.clearColor()
-        
+
         var effect = UIBlurEffect(style: UIBlurEffectStyle.Light)
         var blurView = UIVisualEffectView(effect: effect)
-        
         blurView.frame = self.view.bounds
         
-        self.self.imgBackgroundBlur.addSubview(blurView)
+        imgBackgroundBlur.addSubview(blurView)
+        
+        pageControl.hidden = showMapLocation
+        
+        if !showMapLocation {
+            pageControl.numberOfPages = self.skills.count
+            pageControl.currentPage = 0
+            pageControl.addTarget(self, action: Selector("changePage:"), forControlEvents: UIControlEvents.ValueChanged)
+        }
         
     }
 
@@ -59,7 +66,7 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
         return UIStatusBarStyle.LightContent
     }
     
-    // MARK: UICollectionViewDataSource
+    // MARK: - UICollectionViewDataSource
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
@@ -140,5 +147,20 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
         }
         
     }
-
+    
+    //MARK: - PageControl
+    
+    func changePage(sender: AnyObject) -> () {
+        let x = CGFloat(pageControl.currentPage) * self.collectionView.frame.size.width
+        self.collectionView.setContentOffset(CGPointMake(x, 0), animated: true)
+    }
+    
+    
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        
+        let pageNumber = round(scrollView.contentOffset.x / scrollView.frame.size.width)
+        pageControl.currentPage = Int(pageNumber)
+        
+    }
+    
 }

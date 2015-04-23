@@ -56,7 +56,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bbn-2G-oEn">
                                                     <rect key="frame" x="145" y="167" width="27" height="13"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                    <color key="textColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" translatesAutoresizingMaskIntoConstraints="NO" id="jgG-eA-Rlz">
@@ -196,11 +196,11 @@
                             </imageView>
                             <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IVR-no-fkI">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="605"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="gP6-vM-xUc">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="24" minimumInteritemSpacing="0.0" id="gP6-vM-xUc">
                                     <size key="itemSize" width="340" height="480"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="13" minY="0.0" maxX="10" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellDetail" id="vUl-IQ-KPF" customClass="DetailCollectionViewCell" customModule="RodrigoAndrade" customModuleProvider="target">
@@ -220,7 +220,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXN-G1-7to">
                                                     <rect key="frame" x="39" y="349" width="262" height="35"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXQ-pN-CJk">
@@ -229,13 +229,13 @@
                                                         <constraint firstAttribute="width" constant="262" id="Rpp-RC-tF3"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmD-qT-H4z">
                                                     <rect key="frame" x="153" y="418" width="35" height="17"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="close" translatesAutoresizingMaskIntoConstraints="NO" id="RjX-Vc-ugY">
@@ -303,7 +303,7 @@
                                                         <constraint firstAttribute="width" constant="262" id="92U-xT-eEq"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XrR-cQ-7ob">
@@ -322,7 +322,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VwO-Kw-84U">
                                                     <rect key="frame" x="153" y="407" width="35" height="17"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -351,9 +351,13 @@
                                     <outlet property="delegate" destination="BhJ-Jv-bP3" id="RdV-DQ-wHc"/>
                                 </connections>
                             </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="NjO-nu-dEA">
+                                <rect key="frame" x="281" y="543" width="39" height="37"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="IVR-no-fkI" firstAttribute="centerX" secondItem="NjO-nu-dEA" secondAttribute="centerX" constant="-0.5" id="MTa-UV-gdt"/>
                             <constraint firstItem="IVR-no-fkI" firstAttribute="top" secondItem="3lV-19-QnS" secondAttribute="topMargin" id="R7w-Fg-oSx"/>
                             <constraint firstItem="dpU-ZQ-r9s" firstAttribute="top" secondItem="cgb-oK-JsH" secondAttribute="bottom" id="WW1-Ei-YEa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="IVR-no-fkI" secondAttribute="trailing" constant="-16" id="WkW-uR-TrJ"/>
@@ -362,11 +366,13 @@
                             <constraint firstItem="IVR-no-fkI" firstAttribute="leading" secondItem="3lV-19-QnS" secondAttribute="leadingMargin" constant="-16" id="iqJ-rf-Pnj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cgb-oK-JsH" secondAttribute="trailing" constant="-16" id="lf9-qG-fRh"/>
                             <constraint firstItem="cgb-oK-JsH" firstAttribute="leading" secondItem="3lV-19-QnS" secondAttribute="leadingMargin" constant="-16" id="sOT-X9-gpk"/>
+                            <constraint firstItem="NjO-nu-dEA" firstAttribute="top" secondItem="IVR-no-fkI" secondAttribute="bottom" constant="-62" id="uiT-zH-FC9"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="IVR-no-fkI" id="7s3-Nf-rS5"/>
                         <outlet property="imgBackgroundBlur" destination="cgb-oK-JsH" id="HLd-Rm-n7U"/>
+                        <outlet property="pageControl" destination="NjO-nu-dEA" id="yIC-dz-hGt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cyw-g8-d6o" userLabel="First Responder" sceneMemberID="firstResponder"/>

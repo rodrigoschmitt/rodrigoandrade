@@ -21,12 +21,12 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     var indexPath: NSIndexPath!
     let util = Util()
     
-    //MARK: Methods of UIButton (IBAction)
+    //MARK: - Methods of UIButton (IBAction)
     @IBAction func locationButtonPressed(sender: AnyObject) {
         performSegueWithIdentifier("segueSkill", sender: sender)
     }
     
-    //MARK: Custom Methods
+    //MARK: - Custom Methods
     
     func loadData() {
         
@@ -45,7 +45,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         self.collectionView.reloadData()
     }
     
-    //MARK: Methods of this ViewController
+    //MARK: - Methods of this ViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,7 +83,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         
     }
     
-    // MARK: UICollectionViewDataSource
+    // MARK: - UICollectionViewDataSource
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
