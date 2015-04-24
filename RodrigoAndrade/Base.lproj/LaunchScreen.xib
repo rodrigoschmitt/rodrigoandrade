@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -16,28 +17,29 @@
                     <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="VSx-q2-ykS">
-                    <rect key="frame" x="115" y="159" width="250" height="250"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="250" id="9O8-Hg-sZc"/>
-                        <constraint firstAttribute="height" constant="250" id="BBw-ZP-oZb"/>
-                    </constraints>
-                </imageView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rodrigo Andrade" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
                     <rect key="frame" x="99" y="437" width="283" height="43"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                     <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="VSx-q2-ykS">
+                    <rect key="frame" x="140" y="221" width="200" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="9O8-Hg-sZc"/>
+                        <constraint firstAttribute="width" secondItem="VSx-q2-ykS" secondAttribute="height" multiplier="1:1" id="B1e-ED-5Wy"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="BBw-ZP-oZb"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="0.29019607843137252" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="centerX" secondItem="VSx-q2-ykS" secondAttribute="centerX" id="1mV-Ef-AxT"/>
-                <constraint firstItem="kId-c2-rCX" firstAttribute="top" secondItem="VSx-q2-ykS" secondAttribute="bottom" constant="28" id="HGl-bj-3Vl"/>
+                <constraint firstItem="kId-c2-rCX" firstAttribute="top" secondItem="VSx-q2-ykS" secondAttribute="bottom" constant="16" id="HGl-bj-3Vl"/>
                 <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
                 <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
                 <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
-                <constraint firstItem="VSx-q2-ykS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="159" id="fGF-eD-2F6"/>
+                <constraint firstItem="VSx-q2-ykS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="221" id="fGF-eD-2F6"/>
                 <constraint firstItem="kId-c2-rCX" firstAttribute="centerX" secondItem="VSx-q2-ykS" secondAttribute="centerX" constant="0.5" id="zxI-Hq-YyO"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
