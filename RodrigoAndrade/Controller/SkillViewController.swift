@@ -142,14 +142,6 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
         
     }
     
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        
-        if !showMapLocation {
-            delegate.doneSkillViewController()
-        }
-        
-    }
-    
     //MARK: - PageControl
     
     func changePage(sender: AnyObject) -> () {
