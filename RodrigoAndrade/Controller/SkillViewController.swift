@@ -134,7 +134,11 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         
-        if (UIScreen.mainScreen().nativeBounds.height < 1334)
+        if (UIScreen.mainScreen().nativeBounds.height < 1136)
+        {
+            return CGSize(width: 300, height: 435)
+        }
+        else if (UIScreen.mainScreen().nativeBounds.height < 1334)
         {
             return CGSize(width: 300, height: 460)
         }
