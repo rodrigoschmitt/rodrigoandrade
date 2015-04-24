@@ -201,7 +201,7 @@
                                 </connections>
                             </button>
                             <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IVR-no-fkI">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="605"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="24" minimumInteritemSpacing="0.0" id="gP6-vM-xUc">
                                     <size key="itemSize" width="340" height="480"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -382,7 +382,7 @@
                                 </connections>
                             </collectionView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="NjO-nu-dEA">
-                                <rect key="frame" x="281" y="543" width="39" height="37"/>
+                                <rect key="frame" x="281" y="538" width="39" height="37"/>
                             </pageControl>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -392,7 +392,7 @@
                             <constraint firstItem="IVR-no-fkI" firstAttribute="centerX" secondItem="NjO-nu-dEA" secondAttribute="centerX" constant="-0.5" id="MTa-UV-gdt"/>
                             <constraint firstItem="IVR-no-fkI" firstAttribute="top" secondItem="3lV-19-QnS" secondAttribute="topMargin" id="R7w-Fg-oSx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="IVR-no-fkI" secondAttribute="trailing" constant="-16" id="WkW-uR-TrJ"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="IVR-no-fkI" secondAttribute="bottom" constant="-5" id="drk-eD-mm1"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="IVR-no-fkI" secondAttribute="bottom" id="drk-eD-mm1"/>
                             <constraint firstItem="dpU-ZQ-r9s" firstAttribute="top" secondItem="dvN-Bz-rV8" secondAttribute="bottom" id="glh-Jm-6rb"/>
                             <constraint firstItem="IVR-no-fkI" firstAttribute="leading" secondItem="3lV-19-QnS" secondAttribute="leadingMargin" constant="-16" id="iqJ-rf-Pnj"/>
                             <constraint firstItem="dvN-Bz-rV8" firstAttribute="top" secondItem="3lV-19-QnS" secondAttribute="topMargin" id="o4m-CZ-ijX"/>

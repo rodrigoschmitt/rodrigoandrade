@@ -48,8 +48,11 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
         
         self.collectionView.backgroundColor = UIColor.clearColor()
         self.view.backgroundColor = UIColor.clearColor()
-
-        pageControl.hidden = showMapLocation
+        
+        
+        if showMapLocation || self.skills.count == 1 {
+            pageControl.hidden = true
+        }
         
         if !showMapLocation {
             pageControl.numberOfPages = self.skills.count

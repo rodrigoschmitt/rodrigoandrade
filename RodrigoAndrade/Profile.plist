@@ -219,6 +219,56 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>Interests</key>
+		<array>
+			<dict>
+				<key>photo</key>
+				<string>MTB</string>
+				<key>name</key>
+				<string>Sports</string>
+				<key>title</key>
+				<string>I like to ride my Mountain Bike on weekend</string>
+				<key>detail</key>
+				<string></string>
+				<key>since</key>
+				<date>2013-06-16T17:00:00Z</date>
+				<key>link</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>photo</key>
+				<string>StarWars</string>
+				<key>name</key>
+				<string>Movies</string>
+				<key>title</key>
+				<string>I like to sci-fi movies like Star Wars</string>
+				<key>detail</key>
+				<string></string>
+				<key>since</key>
+				<date>2005-10-31T22:00:00Z</date>
+				<key>link</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>Volunteer</key>
+		<array>
+			<dict>
+				<key>photo</key>
+				<string>Rodrigo_Rotaract02</string>
+				<key>name</key>
+				<string>Rotaract Program</string>
+				<key>title</key>
+				<string>I worked with poor community and co-founder Rotaract Club Cascavel Primavera at Cascavel/PR - Brazil.</string>
+				<key>detail</key>
+				<string></string>
+				<key>since</key>
+				<date>1996-05-10T23:00:00Z</date>
+				<key>period</key>
+				<string>May 1996 – January 1999</string>
+				<key>link</key>
+				<string></string>
+			</dict>
+		</array>
 	</dict>
 </dict>
 </plist>
