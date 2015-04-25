@@ -49,6 +49,23 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
         self.collectionView.backgroundColor = UIColor.clearColor()
         self.view.backgroundColor = UIColor.clearColor()
         
+        // Set vertical effect
+        let verticalMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.y", type: UIInterpolatingMotionEffectType.TiltAlongVerticalAxis)
+        verticalMotionEffect.minimumRelativeValue = -25;
+        verticalMotionEffect.maximumRelativeValue = 25;
+        
+        // Set horizontal effect
+        let horizontalMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.x", type: UIInterpolatingMotionEffectType.TiltAlongHorizontalAxis)
+        horizontalMotionEffect.minimumRelativeValue = -15;
+        horizontalMotionEffect.maximumRelativeValue = 15;
+        
+        // Create group to combine both
+        let group = UIMotionEffectGroup()
+        group.motionEffects = [horizontalMotionEffect, verticalMotionEffect];
+        
+        // Add both effects to your view
+        self.collectionView.addMotionEffect(group)
+        
         
         if showMapLocation || self.skills.count == 1 {
             pageControl.hidden = true

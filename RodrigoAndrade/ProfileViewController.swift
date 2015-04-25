@@ -52,6 +52,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         blurView = UIVisualEffectView(effect: effect)
         blurView.frame = self.view.bounds
         blurView.alpha = 0.0
+        
         self.view.addSubview(blurView)
         
         UIView.animateWithDuration(0.5, animations: {
