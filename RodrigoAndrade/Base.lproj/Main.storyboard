@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGHeader" translatesAutoresizingMaskIntoConstraints="NO" id="0xD-8G-2zB">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="245"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="mfc-RL-vDo"/>
+                                    <constraint firstAttribute="height" constant="245" id="mfc-RL-vDo"/>
                                 </constraints>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KuX-XQ-BDJ">
-                                <rect key="frame" x="0.0" y="250" width="600" height="350"/>
+                                <rect key="frame" x="0.0" y="245" width="600" height="355"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="0.0" id="tnn-mm-mqC">
                                     <size key="itemSize" width="180" height="188"/>
@@ -111,13 +111,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rodrigo Andrade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUn-Vz-3dD">
-                                <rect key="frame" x="220" y="146" width="161" height="25"/>
+                                <rect key="frame" x="220" y="145" width="161" height="25"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtM-Vj-HiD">
-                                <rect key="frame" x="175" y="179" width="251" height="26"/>
+                                <rect key="frame" x="175" y="178" width="251" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="251" id="OG1-w5-qdq"/>
                                 </constraints>
@@ -128,14 +128,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin icon" translatesAutoresizingMaskIntoConstraints="NO" id="Cfe-8U-krm">
-                                <rect key="frame" x="229" y="218" width="10" height="13"/>
+                                <rect key="frame" x="229" y="217" width="10" height="13"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="13" id="0tM-0E-Jnd"/>
                                     <constraint firstAttribute="width" constant="10" id="547-kz-1Mu"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOf-ke-7ch">
-                                <rect key="frame" x="247" y="208" width="95" height="34"/>
+                                <rect key="frame" x="247" y="207" width="95" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="nhK-GX-QQ8"/>
                                 </constraints>
@@ -156,7 +156,7 @@
                             <constraint firstItem="0xD-8G-2zB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="6ur-TJ-gAp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KuX-XQ-BDJ" secondAttribute="trailing" constant="-16" id="8Xd-TY-EkY"/>
                             <constraint firstItem="KuX-XQ-BDJ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="Luh-0C-aBk"/>
-                            <constraint firstItem="RUn-Vz-3dD" firstAttribute="top" secondItem="6kV-VS-02q" secondAttribute="bottom" constant="11" id="PPc-rg-SAs"/>
+                            <constraint firstItem="RUn-Vz-3dD" firstAttribute="top" secondItem="6kV-VS-02q" secondAttribute="bottom" constant="10" id="PPc-rg-SAs"/>
                             <constraint firstItem="Cfe-8U-krm" firstAttribute="centerX" secondItem="jtM-Vj-HiD" secondAttribute="centerX" constant="-66.5" id="RdU-N9-dU4"/>
                             <constraint firstItem="RUn-Vz-3dD" firstAttribute="centerX" secondItem="6kV-VS-02q" secondAttribute="centerX" id="Z9s-XB-Gnc"/>
                             <constraint firstItem="6kV-VS-02q" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="5" id="aAq-t9-dzT"/>
@@ -417,7 +417,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cyw-g8-d6o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1683" y="535"/>
+            <point key="canvasLocation" x="1363" y="339"/>
         </scene>
     </scenes>
     <resources>
