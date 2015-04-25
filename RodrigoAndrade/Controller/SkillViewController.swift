@@ -51,8 +51,8 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
         
         // Set vertical effect
         let verticalMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.y", type: UIInterpolatingMotionEffectType.TiltAlongVerticalAxis)
-        verticalMotionEffect.minimumRelativeValue = -25;
-        verticalMotionEffect.maximumRelativeValue = 25;
+        verticalMotionEffect.minimumRelativeValue = -35;
+        verticalMotionEffect.maximumRelativeValue = 35;
         
         // Set horizontal effect
         let horizontalMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.x", type: UIInterpolatingMotionEffectType.TiltAlongHorizontalAxis)
