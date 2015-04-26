@@ -18,6 +18,7 @@ class RAManager: NSObject {
         // Profile
         let profile = Profile()
         profile.avatar = UIImage(named:plistDict?.objectForKey("avatar") as! String)
+        profile.avatarWatch = plistDict?.objectForKey("avatarWatch") as! String
         profile.name = plistDict?.objectForKey("name") as! String
         profile.job = plistDict?.objectForKey("job") as! String
         

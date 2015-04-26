@@ -11,6 +11,7 @@ import UIKit
 class Profile: NSObject {
     
     var avatar: UIImage!
+    var avatarWatch: String!
     var name: String!
     var job: String!
     var location: Location!

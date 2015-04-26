@@ -4,6 +4,8 @@
 <dict>
 	<key>avatar</key>
 	<string>Avatar</string>
+	<key>avatarWatch</key>
+	<string>Watch_Header</string>
 	<key>name</key>
 	<string>Rodrigo Andrade</string>
 	<key>job</key>
