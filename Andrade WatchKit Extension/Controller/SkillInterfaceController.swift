@@ -24,7 +24,6 @@ class SkillInterfaceController: WKInterfaceController {
         skillTable.setNumberOfRows(self.categorie.skills.count, withRowType: "SkillRow")
         
         for (index, skill) in enumerate(self.categorie.skills) {
-            println(skill.name)
             if let row = skillTable.rowControllerAtIndex(index) as? SkillInterfaceRow {
                 row.txtSkillName.setText(skill.name)
             }
@@ -43,6 +42,27 @@ class SkillInterfaceController: WKInterfaceController {
             
             loadData()
         }
+    }
+    
+    override func willActivate() {
+        // This method is called when watch view controller is about to be visible to user
+        super.willActivate()
+    }
+    
+    override func didDeactivate() {
+        // This method is called when watch view controller is no longer visible
+        super.didDeactivate()
+    }
+    
+    override func contextForSegueWithIdentifier(segueIdentifier: String, inTable table: WKInterfaceTable, rowIndex: Int) -> AnyObject? {
+        if segueIdentifier == "SegueDetailInterface" {
+            
+            let skill = self.categorie.skills.objectAtIndex(rowIndex) as! Skill
+            return skill
+            
+        }
+        
+        return nil
     }
 
 }

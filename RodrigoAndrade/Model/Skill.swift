@@ -23,6 +23,12 @@ class Skill: NSObject {
         }
     }
     
+    var photoName: String {
+        get {
+            return self.plistDict.objectForKey("photo") as! String
+        }
+    }
+    
     var name: String {
         get {
             return self.plistDict.objectForKey("name") as! String

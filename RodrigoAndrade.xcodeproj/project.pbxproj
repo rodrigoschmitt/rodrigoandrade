@@ -15,6 +15,7 @@
 		4A6669391AE1432F0004AC3C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6669381AE1432F0004AC3C /* ProfileViewController.swift */; };
 		8109716C1AE4549800805696 /* SkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8109716B1AE4549800805696 /* SkillViewController.swift */; };
 		810971731AE47AF700805696 /* DetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810971721AE47AF700805696 /* DetailCollectionViewCell.swift */; };
+		810A78711AEC975400D16E73 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BB1C4C1AE2E8F000502B63 /* Util.swift */; };
 		810D16601AE6032400FC75D7 /* MapCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810D165F1AE6032400FC75D7 /* MapCollectionViewCell.swift */; };
 		81151D841AEC31180095D26A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81151D831AEC31180095D26A /* Images.xcassets */; };
 		81151D881AEC31180095D26A /* Andrade WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 81151D871AEC31180095D26A /* Andrade WatchKit App.app */; };
@@ -476,6 +477,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				810A78711AEC975400D16E73 /* Util.swift in Sources */,
 				81151DAF1AEC42310095D26A /* SkillInterfaceController.swift in Sources */,
 				81151DA61AEC34640095D26A /* Skills.swift in Sources */,
 				81151DA51AEC34610095D26A /* Categories.swift in Sources */,

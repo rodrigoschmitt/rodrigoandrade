@@ -43,6 +43,7 @@
                 <controller title="Skills" id="WZF-PB-XZW" customClass="SkillInterfaceController" customModule="Andrade_WatchKit_Extension">
                     <items>
                         <label alignment="left" text="Label" id="PpP-7e-WC7">
+                            <color key="textColor" red="0.29019607843137252" green="0.56470588235294117" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                         </label>
                         <table alignment="left" id="GDH-BO-zhL">
@@ -50,7 +51,7 @@
                                 <tableRow identifier="SkillRow" id="S98-mj-poL" customClass="SkillInterfaceRow" customModule="Andrade_WatchKit_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="rsw-Jp-WPJ">
                                         <items>
-                                            <label alignment="left" text="Label" id="RuM-Yz-0dS"/>
+                                            <label alignment="left" text="Label" numberOfLines="0" id="RuM-Yz-0dS"/>
                                         </items>
                                         <connections>
                                             <segue destination="dVq-nh-6UO" kind="modal" identifier="SegueDetailInterface" id="6wa-Lu-dRe"/>
@@ -76,10 +77,14 @@
             <objects>
                 <controller title="Detail" id="dVq-nh-6UO" customClass="DetailInterfaceController" customModule="Andrade_WatchKit_Extension">
                     <items>
-                        <imageView width="111" height="69" alignment="left" id="kIQ-xp-E1n"/>
-                        <label alignment="left" text="Label" id="AJx-T6-fCr"/>
-                        <label alignment="left" text="Label" id="vsv-dU-7Nn"/>
-                        <label alignment="left" text="Label" id="JOd-oF-RRI"/>
+                        <imageView width="100" height="100" alignment="center" id="kIQ-xp-E1n"/>
+                        <label alignment="center" text="Label" id="AJx-T6-fCr">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <label alignment="left" text="Label" numberOfLines="0" id="vsv-dU-7Nn"/>
+                        <label alignment="left" text="Label" numberOfLines="0" id="JOd-oF-RRI">
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
                     </items>
                     <connections>
                         <outlet property="imgSkill" destination="kIQ-xp-E1n" id="6eC-3Y-wis"/>

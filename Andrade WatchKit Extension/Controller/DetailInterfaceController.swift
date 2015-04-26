@@ -16,14 +16,30 @@ class DetailInterfaceController: WKInterfaceController {
     @IBOutlet weak var lblTitle: WKInterfaceLabel!
     @IBOutlet weak var lblPeriod: WKInterfaceLabel!
     
-//    let skill: Skill!
+    var skill: Skill!
     
     //MARK - Methods of this ViewController
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
-        // Configure interface objects here.
+        if let skill = context as? Skill {
+            
+            self.skill = skill
+            
+            self.imgSkill.setImageNamed(skill.photoName)
+            self.lblName.setText(skill.name)
+            self.lblTitle.setText(skill.title)
+            
+            if skill.period == nil {
+                let util = Util()
+                self.lblPeriod.setText(util.formatDate(skill.since))
+            }
+            else
+            {
+                self.lblPeriod.setText(skill.period)
+            }
+        }
     }
 
     override func willActivate() {
