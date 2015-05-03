@@ -3,7 +3,7 @@ Introduction
 
 <b>Rodrigo's CV in Swift with Apple Watch support for WWDC Scholarship.</b>
  
-This project uses this object library
+This project has this features
 ------------
 
 - Swift language
