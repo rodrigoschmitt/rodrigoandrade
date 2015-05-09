@@ -1,7 +1,7 @@
 Introduction
 ------------
 
-<b>Rodrigo's CV in Swift with Apple Watch support for WWDC Scholarship.</b>
+<b>Rodrigo's CV in Swift with Apple Watch support for WWDC 2015 Scholarship.</b>
  
 This project has this features
 ------------
