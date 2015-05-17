@@ -147,6 +147,22 @@
 		<array>
 			<dict>
 				<key>photo</key>
+				<string>TDC2015_Floripa</string>
+				<key>name</key>
+				<string>TDC Florianópolis</string>
+				<key>title</key>
+				<string>iOS Development with Unit Testes and Xcode Server</string>
+				<key>detail</key>
+				<string></string>
+				<key>since</key>
+				<date>2015-05-15T13:10:00Z</date>
+				<key>link</key>
+				<string>http://www.thedevelopersconference.com.br/tdc/2015/florianopolis/trilha-mobile</string>
+				<key>linkButton</key>
+				<string>Open in Safari</string>
+			</dict>
+			<dict>
+				<key>photo</key>
 				<string>CocoaHeads</string>
 				<key>name</key>
 				<string>CocoaHeads</string>
