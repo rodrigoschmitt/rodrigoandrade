@@ -24,7 +24,7 @@ class Skills: NSObject {
             for itens in self.plistDict {
                 
                 let cat = Categories(plistArray: itens.value as! NSArray, name: itens.key as! String)
-                categories.addObject(cat)
+                categories.add(cat)
             }
             
             return categories

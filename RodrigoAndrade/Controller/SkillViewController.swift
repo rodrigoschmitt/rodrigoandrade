@@ -29,16 +29,16 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     //MARK: - Methods of UIButton (IBAction)
     
-    @IBAction func doneButtonPressed(sender: AnyObject) {
+    @IBAction func doneButtonPressed(_ sender: AnyObject) {
         
         delegate.doneSkillViewController()
         
     }
     
-    @IBAction func linkButtonPressed(sender: UIButton) {
-        let skill: Skill = self.skills.objectAtIndex(sender.tag) as! Skill
+    @IBAction func linkButtonPressed(_ sender: UIButton) {
+        let skill: Skill = self.skills.object(at: sender.tag) as! Skill
         
-        UIApplication.sharedApplication().openURL(NSURL(string:skill.link)!)
+        UIApplication.shared.openURL(URL(string:skill.link)!)
     }
     
     //MARK: - Custom Methods
@@ -46,16 +46,16 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.collectionView.backgroundColor = UIColor.clearColor()
-        self.view.backgroundColor = UIColor.clearColor()
+        self.collectionView.backgroundColor = UIColor.clear
+        self.view.backgroundColor = UIColor.clear
         
         // Set vertical effect
-        let verticalMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.y", type: UIInterpolatingMotionEffectType.TiltAlongVerticalAxis)
+        let verticalMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.y", type: UIInterpolatingMotionEffectType.tiltAlongVerticalAxis)
         verticalMotionEffect.minimumRelativeValue = -35;
         verticalMotionEffect.maximumRelativeValue = 35;
         
         // Set horizontal effect
-        let horizontalMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.x", type: UIInterpolatingMotionEffectType.TiltAlongHorizontalAxis)
+        let horizontalMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.x", type: UIInterpolatingMotionEffectType.tiltAlongHorizontalAxis)
         horizontalMotionEffect.minimumRelativeValue = -15;
         horizontalMotionEffect.maximumRelativeValue = 15;
         
@@ -68,13 +68,13 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
         
         
         if showMapLocation || self.skills.count == 1 {
-            pageControl.hidden = true
+            pageControl.isHidden = true
         }
         
         if !showMapLocation {
             pageControl.numberOfPages = self.skills.count
             pageControl.currentPage = 0
-            pageControl.addTarget(self, action: Selector("changePage:"), forControlEvents: UIControlEvents.ValueChanged)
+            pageControl.addTarget(self, action: #selector(SkillViewController.changePage(_:)), for: UIControlEvents.valueChanged)
         }
         
     }
@@ -84,18 +84,18 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
         // Dispose of any resources that can be recreated.
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
     }
     
     // MARK: - UICollectionViewDataSource
     
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if showMapLocation {
             return 1
         } else {
@@ -103,10 +103,10 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
         }
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         if showMapLocation {
-            let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CellMap", forIndexPath: indexPath) as! MapCollectionViewCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CellMap", for: indexPath) as! MapCollectionViewCell
             cell.showLocation(self.location.latitude, longitude: self.location.longitude, locationName: self.location.name)
             cell.layer.masksToBounds = true
             cell.layer.cornerRadius = 4
@@ -114,9 +114,9 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
             return cell
             
         } else {
-            let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CellDetail", forIndexPath: indexPath) as! DetailCollectionViewCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CellDetail", for: indexPath) as! DetailCollectionViewCell
             
-            let skill: Skill = self.skills.objectAtIndex(indexPath.row) as! Skill
+            let skill: Skill = self.skills.object(at: indexPath.row) as! Skill
             
             cell.lblName.text = skill.name
             cell.imgSkill.image = skill.photo
@@ -131,12 +131,12 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
             }
             
             if skill.linkButton == nil {
-                cell.btnLink.hidden = true
+                cell.btnLink.isHidden = true
             }
             else
             {
-                cell.btnLink.hidden = false
-                cell.btnLink.setTitle(skill.linkButton, forState: UIControlState.Normal)
+                cell.btnLink.isHidden = false
+                cell.btnLink.setTitle(skill.linkButton, for: UIControlState())
                 cell.btnLink.tag = indexPath.row
             }
             
@@ -149,13 +149,13 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
         
     }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize {
         
-        if (UIScreen.mainScreen().nativeBounds.height < 1136)
+        if (UIScreen.main.nativeBounds.height < 1136)
         {
             return CGSize(width: 300, height: 435)
         }
-        else if (UIScreen.mainScreen().nativeBounds.height < 1334)
+        else if (UIScreen.main.nativeBounds.height < 1334)
         {
             return CGSize(width: 300, height: 460)
         }
@@ -168,13 +168,13 @@ class SkillViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     //MARK: - PageControl
     
-    func changePage(sender: AnyObject) -> () {
+    func changePage(_ sender: AnyObject) -> () {
         let x = CGFloat(pageControl.currentPage) * self.collectionView.frame.size.width
-        self.collectionView.setContentOffset(CGPointMake(x, 0), animated: true)
+        self.collectionView.setContentOffset(CGPoint(x: x, y: 0), animated: true)
     }
     
     
-    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         
         let pageNumber = round(scrollView.contentOffset.x / scrollView.frame.size.width)
         pageControl.currentPage = Int(pageNumber)

@@ -19,44 +19,44 @@ class Skill: NSObject {
     
     var photo: UIImage {
         get {
-            return UIImage(named:self.plistDict.objectForKey("photo") as! String)!
+            return UIImage(named:self.plistDict.object(forKey: "photo") as! String)!
         }
     }
     
     var photoName: String {
         get {
-            return self.plistDict.objectForKey("photo") as! String
+            return self.plistDict.object(forKey: "photo") as! String
         }
     }
     
     var name: String {
         get {
-            return self.plistDict.objectForKey("name") as! String
+            return self.plistDict.object(forKey: "name") as! String
         }
     }
     
     var title: String {
         get {
-            return self.plistDict.objectForKey("title") as! String
+            return self.plistDict.object(forKey: "title") as! String
         }
     }
     
     var detail: String {
         get {
-            return self.plistDict.objectForKey("detail") as! String
+            return self.plistDict.object(forKey: "detail") as! String
         }
     }
     
-    var since: NSDate {
+    var since: Date {
         get {
-            return self.plistDict.objectForKey("since") as! NSDate
+            return self.plistDict.object(forKey: "since") as! Date
         }
     }
     
     var period: String? {
         get {
-            if self.plistDict.objectForKey("period") != nil {
-                return self.plistDict.objectForKey("period") as? String
+            if self.plistDict.object(forKey: "period") != nil {
+                return self.plistDict.object(forKey: "period") as? String
             }
             
             return nil
@@ -65,14 +65,14 @@ class Skill: NSObject {
     
     var link: String {
         get {
-            return self.plistDict.objectForKey("link") as! String
+            return self.plistDict.object(forKey: "link") as! String
         }
     }
     
     var linkButton: String? {
         get {
-            if self.plistDict.objectForKey("linkButton") != nil {
-                return self.plistDict.objectForKey("linkButton") as? String
+            if self.plistDict.object(forKey: "linkButton") != nil {
+                return self.plistDict.object(forKey: "linkButton") as? String
             }
             
             return nil

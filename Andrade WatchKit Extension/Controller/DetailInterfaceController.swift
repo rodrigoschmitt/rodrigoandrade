@@ -20,8 +20,8 @@ class DetailInterfaceController: WKInterfaceController {
     
     //MARK - Methods of this ViewController
     
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
         
         if let skill = context as? Skill {
             

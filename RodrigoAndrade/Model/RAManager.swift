@@ -12,26 +12,26 @@ class RAManager: NSObject {
 
     func requestProfile() -> Profile {
         
-        let plistPath: String = NSBundle.mainBundle().pathForResource("Profile", ofType:"plist")!
+        let plistPath: String = Bundle.main.path(forResource: "Profile", ofType:"plist")!
         let plistDict = NSDictionary(contentsOfFile:plistPath)
         
         // Profile
         let profile = Profile()
-        profile.avatar = UIImage(named:plistDict?.objectForKey("avatar") as! String)
-        profile.avatarWatch = plistDict?.objectForKey("avatarWatch") as! String
-        profile.name = plistDict?.objectForKey("name") as! String
-        profile.job = plistDict?.objectForKey("job") as! String
+        profile.avatar = UIImage(named:plistDict?.object(forKey: "avatar") as! String)
+        profile.avatarWatch = plistDict?.object(forKey: "avatarWatch") as! String
+        profile.name = plistDict?.object(forKey: "name") as! String
+        profile.job = plistDict?.object(forKey: "job") as! String
         
         // Location
         let location = Location()
-        location.name = plistDict?.objectForKey("location")?.objectForKey("name") as! String
-        location.latitude = plistDict?.objectForKey("location")?.objectForKey("latitude") as! Double
-        location.longitude = plistDict?.objectForKey("location")?.objectForKey("longitude") as! Double
+        location.name = (plistDict?.object(forKey: "location") as AnyObject).object(forKey: "name") as! String
+        location.latitude = (plistDict?.object(forKey: "location") as AnyObject).object(forKey: "latitude") as! Double
+        location.longitude = (plistDict?.object(forKey: "location") as AnyObject).object(forKey: "longitude") as! Double
         
         profile.location = location
         
         // Skills
-        profile.skills = Skills(plistDict: plistDict?.objectForKey("skills") as! NSDictionary);
+        profile.skills = Skills(plistDict: plistDict?.object(forKey: "skills") as! NSDictionary);
         
         return profile
     }

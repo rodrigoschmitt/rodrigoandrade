@@ -23,17 +23,19 @@ class SkillInterfaceController: WKInterfaceController {
         
         skillTable.setNumberOfRows(self.categorie.skills.count, withRowType: "SkillRow")
         
-        for (index, skill) in enumerate(self.categorie.skills) {
-            if let row = skillTable.rowControllerAtIndex(index) as? SkillInterfaceRow {
-                row.txtSkillName.setText(skill.name)
+        for (index, skill) in self.categorie.skills.enumerated() {
+            if let row = skillTable.rowController(at: index) as? SkillInterfaceRow {
+                if let skill = skill as? Skill {
+                    row.txtSkillName.setText(skill.name)
+                }
             }
         }
     }
     
     //MARK - Methods of this ViewController
     
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
         
         if let categorie = context as? Categories {
             
@@ -54,10 +56,10 @@ class SkillInterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
     
-    override func contextForSegueWithIdentifier(segueIdentifier: String, inTable table: WKInterfaceTable, rowIndex: Int) -> AnyObject? {
+    override func contextForSegue(withIdentifier segueIdentifier: String, in table: WKInterfaceTable, rowIndex: Int) -> Any? {
         if segueIdentifier == "SegueDetailInterface" {
             
-            let skill = self.categorie.skills.objectAtIndex(rowIndex) as! Skill
+            let skill = self.categorie.skills.object(at: rowIndex) as! Skill
             return skill
             
         }

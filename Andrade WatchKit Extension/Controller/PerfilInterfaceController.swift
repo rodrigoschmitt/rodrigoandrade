@@ -15,7 +15,7 @@ class PerfilInterfaceController: WKInterfaceController {
     @IBOutlet weak var skillsTable: WKInterfaceTable!
     
     var skills: Skills!
-    var indexPath: NSIndexPath!
+    var indexPath: IndexPath!
     
     //MARK: - Custom Methods
     
@@ -30,17 +30,19 @@ class PerfilInterfaceController: WKInterfaceController {
         
         skillsTable.setNumberOfRows(self.skills.categories.count, withRowType: "SkillsRow")
         
-        for (index, category) in enumerate(self.skills.categories) {
-            if let row = skillsTable.rowControllerAtIndex(index) as? SkillInterfaceRow {
-                row.txtSkillName.setText(category.name)
+        for (index, category) in self.skills.categories.enumerated() {
+            if let row = skillsTable.rowController(at: index) as? SkillInterfaceRow {
+                if let category = category as? Categories {
+                    row.txtSkillName.setText(category.name)
+                }
             }
         }
     }
     
     //MARK - Methods of this ViewController
     
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
         
         loadData()
     }
@@ -55,10 +57,10 @@ class PerfilInterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
     
-    override func contextForSegueWithIdentifier(segueIdentifier: String, inTable table: WKInterfaceTable, rowIndex: Int) -> AnyObject? {
+    override func contextForSegue(withIdentifier segueIdentifier: String, in table: WKInterfaceTable, rowIndex: Int) -> Any? {
         if segueIdentifier == "SegueSkillInterface" {
             
-            let category = self.skills.categories.objectAtIndex(rowIndex) as! Categories
+            let category = self.skills.categories.object(at: rowIndex) as! Categories
             return category
             
         }
@@ -66,3 +68,7 @@ class PerfilInterfaceController: WKInterfaceController {
         return nil
     }
 }
+//
+//extension Sequence {
+//    func enumerate() -> EnumerateSequence<Self>
+//}
