@@ -18,12 +18,12 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     
     var skills: Skills!
     var location: Location!
-    var indexPath: NSIndexPath!
+    var indexPath: IndexPath!
     let util = Util()
     var blurView = UIVisualEffectView()
     
     //MARK: - Methods of UIButton (IBAction)
-    @IBAction func locationButtonPressed(sender: AnyObject) {
+    @IBAction func locationButtonPressed(_ sender: AnyObject) {
         openSkills(sender)
     }
     
@@ -39,29 +39,29 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         lblName.text = profile.name
         lblJob.text = profile.job
         
-        btnLocation.setTitle(self.location.name, forState: UIControlState.Normal)
+        btnLocation.setTitle(self.location.name, for: UIControlState())
         
         self.skills = profile.skills
         
         self.collectionView.reloadData()
     }
     
-    func openSkills(sender: AnyObject) {
+    func openSkills(_ sender: AnyObject) {
         
-        var effect = UIBlurEffect(style: UIBlurEffectStyle.Dark)
+        let effect = UIBlurEffect(style: UIBlurEffectStyle.dark)
         blurView = UIVisualEffectView(effect: effect)
         blurView.frame = self.view.bounds
         blurView.alpha = 0.0
         
         self.view.addSubview(blurView)
         
-        UIView.animateWithDuration(0.5, animations: {
+        UIView.animate(withDuration: 0.5, animations: {
             
             self.blurView.alpha = 1.0
             
             }, completion: nil)
         
-        performSegueWithIdentifier("segueSkill", sender: sender)
+        performSegue(withIdentifier: "segueSkill", sender: sender)
         
     }
     
@@ -69,7 +69,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     
     func doneSkillViewController() {
         
-        UIView.animateWithDuration(0.5, animations: {
+        UIView.animate(withDuration: 0.5, animations: {
             
             self.blurView.alpha = 0.0
             
@@ -82,7 +82,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         })
         
         
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
     
     //MARK: - Methods of this ViewController
@@ -100,16 +100,16 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         // Dispose of any resources that can be recreated.
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
     }
     
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        let skillViewController: SkillViewController = segue.destinationViewController as! SkillViewController
+        let skillViewController: SkillViewController = segue.destination as! SkillViewController
         skillViewController.delegate = self
         
         if sender is UIButton {
@@ -117,7 +117,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
             skillViewController.location = self.location
             
         } else {
-            let category = self.skills.categories.objectAtIndex(self.indexPath.row) as! Categories
+            let category = self.skills.categories.object(at: self.indexPath.row) as! Categories
             skillViewController.skills = category.skills
         }
     
@@ -126,20 +126,20 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     
     // MARK: - UICollectionViewDataSource
     
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.skills.categories.count
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! SkillCollectionViewCell
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! SkillCollectionViewCell
         
-        let category = skills.categories.objectAtIndex(indexPath.row) as! Categories
-        let skill: Skill = category.skills.objectAtIndex(0) as! Skill
+        let category = skills.categories.object(at: indexPath.row) as! Categories
+        let skill: Skill = category.skills.object(at: 0) as! Skill
         
         cell.lblSkill.text = category.name
         cell.imgSkill.image = skill.photo
@@ -148,9 +148,9 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         return cell
     }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize {
             
-        if UIScreen.mainScreen().nativeBounds.height < 1334
+        if UIScreen.main.nativeBounds.height < 1334
         {
             return CGSize(width: 152, height: 160)
         }
@@ -161,7 +161,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         
     }
     
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         self.indexPath = indexPath
         
