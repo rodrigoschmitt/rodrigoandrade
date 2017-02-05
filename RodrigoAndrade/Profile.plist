@@ -9,7 +9,7 @@
 	<key>name</key>
 	<string>Rodrigo Andrade</string>
 	<key>job</key>
-	<string>iOS Developer on BEPiD (Brazilian Education Program for iOS Development)</string>
+	<string>iOS Instructor on BEPiD (Brazilian Education Program for iOS Development)</string>
 	<key>location</key>
 	<dict>
 		<key>name</key>
@@ -25,6 +25,42 @@
 		<array>
 			<dict>
 				<key>photo</key>
+				<string>BEPiD</string>
+				<key>name</key>
+				<string>BEPiD</string>
+				<key>title</key>
+				<string>iOS Instructor</string>
+				<key>detail</key>
+				<string>Instructor at BEPiD (Brazilian Education Program for iOS Development), a pioneering program with support from Apple. My role is to teach iOS to 50 university students in an one year course that should prepare them to start their own startups and develop great apps.</string>
+				<key>since</key>
+				<date>2015-12-14T02:00:00Z</date>
+				<key>period</key>
+				<string>December 2015 – Present</string>
+				<key>link</key>
+				<string>https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile</string>
+				<key>linkButton</key>
+				<string>Open in Linkedin</string>
+			</dict>
+			<dict>
+				<key>photo</key>
+				<string>PostGraduate</string>
+				<key>name</key>
+				<string>Faculdade SENACRS</string>
+				<key>title</key>
+				<string>Teacher of Postgraduate on Mobile</string>
+				<key>detail</key>
+				<string>Teaching advanced iOS (Swift 3, tvOS, MapKit, CloudKit etc) and Mobile Projects (Software Quality with Xcode Server, Analytics etc).</string>
+				<key>since</key>
+				<date>2016-10-21T02:00:00Z</date>
+				<key>period</key>
+				<string>October 2016 – Present</string>
+				<key>link</key>
+				<string>https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile</string>
+				<key>linkButton</key>
+				<string>Open in Linkedin</string>
+			</dict>
+			<dict>
+				<key>photo</key>
 				<string>GrupoRBS</string>
 				<key>name</key>
 				<string>Grupo RBS</string>
@@ -35,7 +71,7 @@
 				<key>since</key>
 				<date>2011-01-03T02:00:00Z</date>
 				<key>period</key>
-				<string>January 2014 – Present</string>
+				<string>January 2014 – July 2015</string>
 				<key>link</key>
 				<string>https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile</string>
 				<key>linkButton</key>
@@ -145,6 +181,22 @@
 		</array>
 		<key>Lectures</key>
 		<array>
+			<dict>
+				<key>photo</key>
+				<string>TDC2016_PoA</string>
+				<key>name</key>
+				<string>TDC Porto Alegre</string>
+				<key>title</key>
+				<string>Lecture about App development for tvOS.</string>
+				<key>detail</key>
+				<string></string>
+				<key>since</key>
+				<date>2016-10-05T13:10:00Z</date>
+				<key>link</key>
+				<string>http://www.thedevelopersconference.com.br/tdc/2016/portoalegre/trilha-ios</string>
+				<key>linkButton</key>
+				<string>Open in Safari</string>
+			</dict>
 			<dict>
 				<key>photo</key>
 				<string>TDC2015_Floripa</string>
