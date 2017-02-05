@@ -11,14 +11,6 @@ This project has this features
 - UICollectionView
 - Data Persistence using PLIST
 
-Screenshots
-------------
-<p><a href="http://www.devmac.com.br/images/Watch01.jpg" target="_blank"><img src="http://www.devmac.com.br/images/Watch01.jpg" alt="alt tag" style="max-width:100%;"></a></p>
-
-<p><a href="http://www.devmac.com.br/images/iPhone01.jpg" target="_blank"><img src="http://www.devmac.com.br/images/iPhone01.jpg" alt="alt tag" width="375"></a></p>
-
-<p><a href="http://www.devmac.com.br/images/iPhone02.jpg" target="_blank"><img src="http://www.devmac.com.br/images/iPhone02.jpg" alt="alt tag" width="375""></a></p>
-
 LICENSE
 --------------
 
