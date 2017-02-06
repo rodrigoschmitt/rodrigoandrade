@@ -6,12 +6,8 @@
 //  Copyright (c) 2015 DevMac. All rights reserved.
 //
 
-import UIKit
-
-class Location: NSObject {
-   
-    var name: String!
-    var latitude: Double!
-    var longitude: Double!
-    
+struct Location {
+    let name: String!
+    let latitude: Double!
+    let longitude: Double!
 }

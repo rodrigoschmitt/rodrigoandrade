@@ -8,13 +8,11 @@
 
 import UIKit
 
-class Profile: NSObject {
-    
-    var avatar: UIImage!
-    var avatarWatch: String!
-    var name: String!
-    var job: String!
-    var location: Location!
-    var skills: Skills!
-   
+struct Profile {
+    let avatar: UIImage!
+    let avatarWatch: String!
+    let name: String!
+    let job: String!
+    let location: Location!
+    let skills: Skills!
 }

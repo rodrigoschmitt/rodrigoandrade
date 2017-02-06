@@ -11,12 +11,10 @@ import UIKit
 class Util: NSObject {
     
     func circularProfile(_ imgProfile: UIImageView, borderWith: CGFloat) {
-        
         imgProfile.layer.cornerRadius = imgProfile.frame.size.width / 2
         imgProfile.clipsToBounds = true
         imgProfile.layer.borderWidth = borderWith
         imgProfile.layer.borderColor = UIColor.white.cgColor
-        
     }
     
     func calculateAge (_ birthday: Date) -> NSString {
@@ -53,11 +51,9 @@ class Util: NSObject {
                 return "\(resultYear) years" as NSString   
             }
         }
-    
     }
     
     func formatDate (_ originalDate: Date) -> String {
-        
         let dayTimePeriodFormatter = DateFormatter()
         dayTimePeriodFormatter.dateFormat = "MMMM dd, yyyy"
         
@@ -67,14 +63,12 @@ class Util: NSObject {
     }
     
     func takeSnapshot(_ view: UIView) -> UIImage {
-        
         UIGraphicsBeginImageContext(view.frame.size)
         view.layer.render(in: UIGraphicsGetCurrentContext()!)
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
         return image!
-        
     }
     
 }
