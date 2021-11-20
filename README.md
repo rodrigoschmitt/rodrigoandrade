@@ -1,8 +1,16 @@
-Introduction
+Apple Worldwide Developers Conference (WWDC) Scholarship
 ------------
 
-<b>Rodrigo's CV in Swift with Apple Watch support for WWDC 2015 Scholarship.</b>
+Jun 2015 - Cupertino, CA - Apple
  
+WWDC Scholarships reward 350 selected talented students and developers of the world with the opportunity to attend in Apple conference.
+
+To be considered for a WWDC 2015 Scholarship, students have to use creativity and coding skills to build and submit an app that tells us about himself. This Mac app or iOS app must be written in Objective-C and Swift, or written entirely in Swift and should highlight development projects that worked on, educational and professional background, technical skills, and interests.
+
+Submissions are judged on technical accomplishment, creativity of ideas, and technical/work experience displayed in the app. In case of tie between applicants in the final judging process, Apple base its final decision on the creativity of ideas expressed in the app.
+
+> My source code was one of 350 selected by Apple to earn a ticket for the WWDC 15.
+
 This project has this features
 ------------
 
